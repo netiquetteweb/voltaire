@@ -1,0 +1,38 @@
+//
+// Voltaire - _custom.scss
+//
+
+.contactsearch {
+  position: relative;
+  .form-control {
+    height: 50px;
+    padding: 10px 60px 10px 15px;
+    box-shadow: 0 0 10px $voltaire-shadow;
+    border: 0;
+    border-radius: 35px;
+  }
+  .form-action {
+    position: absolute;
+    right: 0;
+    top: 0;
+    .btn {
+      background-color: $voltaire;
+      border: 0;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+    }
+  }
+}
+.viewFilter {
+  .rightView {
+    .tabs {
+      height: 50px;
+      box-shadow: 0 0 10px $voltaire-shadow;
+      border: solid 1px $gray-base6;
+      border-radius: 35px;
+      background-color: $white;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+//
+// Voltaire - _mixins.scss
+//
+// Background Cover Mixin
+@mixin background-cover {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}

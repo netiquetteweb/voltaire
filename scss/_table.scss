@@ -1,0 +1,158 @@
+//
+// Voltaire - _table.scss
+//
+
+.table {
+  thead {
+    th {
+      color: $voltaire;
+      border: 0;
+      font-size: 14px;
+      font-weight: 400;
+      &:last-child {
+        text-align: center;
+      }
+    }
+  }
+  tbody {
+    tr {
+      position: relative;
+      td {
+        font-size: 15px;
+        font-weight: 400;
+        vertical-align: middle;
+        border: 0;
+        position: relative;
+        .userInfo {
+          display: -ms-flexbox;
+          display: flex;
+          align-items: center;
+          .avatarImg {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px $voltaire-shadow;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 400;
+            margin-right: 20px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .iconSocial {
+          li {
+            border: solid 1px $gray-base6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s color ease-in-out;
+            margin: 0 5px;
+            a {
+              text-decoration: none;
+              img {
+                display: flex;
+              }
+            }
+            &:hover {
+              box-shadow: 0 0 5px $voltaire;
+            }
+          }
+        }
+        &:last-child {
+          text-align: center;
+          color: $gray-base6;
+        }
+      }
+    }
+  }
+}
+.tableViewContent {
+  padding-top: 50px;
+  .viewGroup {
+    padding: 0 15px;
+    .viewHeader {
+      margin-bottom: 25px;
+      padding: 0 15px;
+      .headCTop {
+        color: $voltaire;
+        border: 0;
+        font-size: 14px;
+        font-weight: 400;
+        &:last-child {
+          text-align: center;
+        }
+      }
+    }
+    .viewContent {
+      .row {
+        position: relative;
+        padding: 25px 15px;
+        align-items: center;
+        border: solid 1px $white1;
+        border-radius: 5px;
+        background-color: $white;
+        box-shadow: 0 0 15px $voltaire-shadow;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        .headTop {
+          font-size: 15px;
+          font-weight: 400;
+          vertical-align: middle;
+          border: 0;
+          position: relative;
+          .userInfo {
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            .avatarImg {
+              width: 65px;
+              height: 65px;
+              border-radius: 50%;
+              box-shadow: 0 0 10px $voltaire-shadow;
+              color: $white;
+              text-transform: uppercase;
+              font-size: 18px;
+              font-weight: 400;
+              margin-right: 20px;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .iconSocial {
+            li {
+              border: solid 1px $gray-base6;
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: .3s color ease-in-out;
+              margin: 0 5px;
+              a {
+                text-decoration: none;
+                img {
+                  display: flex;
+                }
+              }
+              &:hover {
+                box-shadow: 0 0 5px $voltaire;
+              }
+            }
+          }
+          &:last-child {
+            text-align: center;
+            color: $gray-base6;
+          }
+        }
+      }
+    }
+  }
+}
