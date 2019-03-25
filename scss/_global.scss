@@ -95,15 +95,15 @@ strong {
 }
 
 .btn-alt {
-  background-color: $voltaire;
-  border-color: $voltaire;
-  color: $white;
+  background: linear-gradient(-35deg, $voltaire, $voltaire2);
+  border: 0;
+  color: $white !important;
 
   &:active,
   &:focus,
   &:hover {
-    background-color: darken($voltaire, 7.5%) !important;
-    border-color: darken($voltaire, 7.5%) !important;
+    background: linear-gradient(35deg, $voltaire, $voltaire2);
+    border: 0;
     color: $white;
   }
 

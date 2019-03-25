@@ -68,12 +68,12 @@ strong {
     box-shadow: 0 0 0 1px #18b0ff !important; }
 
 .btn-alt {
-  background-color: #009ef1;
-  border-color: #009ef1;
-  color: #fff; }
+  background: linear-gradient(-35deg, #009ef1, #00a7ff);
+  border: 0;
+  color: #fff !important; }
   .btn-alt:active, .btn-alt:focus, .btn-alt:hover {
-    background-color: #0085cb !important;
-    border-color: #0085cb !important;
+    background: linear-gradient(35deg, #009ef1, #00a7ff);
+    border: 0;
     color: #fff; }
   .btn-alt:active, .btn-alt:focus {
     box-shadow: 0 0 0 1px #18b0ff !important; }
@@ -236,12 +236,57 @@ img ::-moz-selection {
       height: 50px;
       justify-content: center; }
 
+.viewFilter .leftView .navcheck li a {
+  display: inline-flex;
+  margin-right: 15px;
+  color: #ababab;
+  font-weight: 400; }
+  .viewFilter .leftView .navcheck li a span {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: solid 2px #f1f1f1;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+    position: relative;
+    transition: .5s color ease-in-out; }
+    .viewFilter .leftView .navcheck li a span::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      left: 5px;
+      top: 4px;
+      background-color: #009ef1;
+      opacity: 0; }
+  .viewFilter .leftView .navcheck li a:hover, .viewFilter .leftView .navcheck li a:focus, .viewFilter .leftView .navcheck li a.active {
+    color: #009ef1; }
+    .viewFilter .leftView .navcheck li a:hover span, .viewFilter .leftView .navcheck li a:focus span, .viewFilter .leftView .navcheck li a.active span {
+      border-color: #009ef1; }
+      .viewFilter .leftView .navcheck li a:hover span::before, .viewFilter .leftView .navcheck li a:focus span::before, .viewFilter .leftView .navcheck li a.active span::before {
+        opacity: 1; }
+
 .viewFilter .rightView .tabs {
   height: 50px;
   box-shadow: 0 0 10px rgba(0, 158, 241, 0.0784314);
-  border: solid 1px #bfc5d1;
+  border: solid 1px #f1f1f1;
   border-radius: 35px;
   background-color: #fff; }
+  .viewFilter .rightView .tabs li a {
+    height: 50px;
+    display: flex;
+    padding: 0 50px;
+    margin: 0 -2px;
+    justify-content: center;
+    line-height: 50px;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #bcbcbc; }
+    .viewFilter .rightView .tabs li a:hover, .viewFilter .rightView .tabs li a:focus {
+      background: linear-gradient(-35deg, #009ef1, #00a7ff);
+      color: #fff; }
 
 .adminSidebar {
   position: fixed;
@@ -328,7 +373,8 @@ img ::-moz-selection {
       color: #bfc5d1;
       font-size: 18px;
       height: 100px;
-      padding: 0 40px; }
+      padding: 0 40px;
+      outline: none; }
   .admin-header .notification {
     display: -ms-flexbox;
     display: flex;
@@ -460,7 +506,7 @@ img ::-moz-selection {
           display: flex;
           align-items: center; }
           .tableViewContent .viewGroup .viewContent .row .headTop .userInfo .avatarImg {
-            width: 65px;
+            min-width: 65px;
             height: 65px;
             border-radius: 50%;
             box-shadow: 0 0 10px rgba(0, 158, 241, 0.0784314);

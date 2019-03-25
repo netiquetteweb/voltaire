@@ -26,13 +26,76 @@
   }
 }
 .viewFilter {
+  .leftView {
+    .navcheck {
+      li {
+        a {
+        display: inline-flex;
+        margin-right: 15px;
+        color: $gray-base8;
+        font-weight: 400;
+          span {
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            border: solid 2px $white1;
+            display: -ms-flexbox;
+            display: flex;
+            margin-right: 10px;
+            position: relative;
+            transition: .5s color ease-in-out;
+            &::before {
+              content: '';
+              width: 12px;
+              height: 12px;
+              position: absolute;
+              left: 5px;
+              top: 4px;
+              background-color: $voltaire;
+              opacity: 0;
+            }
+          }
+          &:hover,
+          &:focus,
+          &.active {
+            color: $voltaire;
+            span {
+              border-color: $voltaire;
+              &::before {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .rightView {
     .tabs {
       height: 50px;
       box-shadow: 0 0 10px $voltaire-shadow;
-      border: solid 1px $gray-base6;
+      border: solid 1px $white1;
       border-radius: 35px;
       background-color: $white;
+      li {
+        a {
+          height: 50px;
+          display: flex;
+          padding: 0 50px;
+          margin: 0 -2px;
+          justify-content: center;
+          line-height: 50px;
+          border-radius: 35px;
+          font-size: 16px;
+          font-weight: 700;
+          color: $gray-base7;
+          &:hover,
+          &:focus {
+            background: linear-gradient(-35deg, $voltaire, $voltaire2);
+            color: $white;
+          }
+        }
+      }
     }
   }
 }
