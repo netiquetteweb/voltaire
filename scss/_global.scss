@@ -302,6 +302,12 @@ img {
 .mainContent {
   padding: 140px 15px 15px 330px;
   box-shadow: inset 0 0 15px $voltaire-shadow;
+  @media screen and (max-width: 991px) {
+    padding: 140px 0 15px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 100px 0 15px;
+  }
 }
 .pageTitle {
   color: $voltaire1;

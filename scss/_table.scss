@@ -27,6 +27,9 @@
           display: -ms-flexbox;
           display: flex;
           align-items: center;
+          @media screen and (max-width: 768px) {
+            display: inherit;
+          }
           .avatarImg {
             width: 65px;
             height: 65px;
@@ -145,11 +148,31 @@
               &:hover {
                 box-shadow: 0 0 5px $voltaire;
               }
+              @media screen and (max-width: 991px) {
+                margin-bottom: 5px;
+              }
             }
           }
           &:last-child {
             text-align: center;
             color: $gray-base6;
+          }
+          @media screen and (max-width: 768px) {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            .icon {
+              color: $voltaire;
+              font-size: 20px;
+              margin-right: 10px;
+            }
+            &.ellipDropdown {
+              position: absolute;
+              right: 10px;
+              top: 10px;
+              font-size: 22px;
+              width: auto;
+              z-index: 1;
+            }
           }
         }
       }

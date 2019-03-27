@@ -23,23 +23,23 @@
 
 <body id="page-top" class="contact">
   <!-- ADMIN SIDEBAR -->
-  <aside class="adminSidebar">
+  <aside class="adminSidebar collapse navbar-collapse" id="navbarSupportedContent">
   <div class="row">
     <div class="logo col">
       <a href="#"><img src="img/logo.png" alt="Voltaire" /></a>
     </div>
-    <nav id="sidebar" class="sidebar-wrapper">
+    <nav id="sidebar" class="sidebar-wrapper col-12">
       <ul class="nav sidebar-menu">
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-user"></i><span>Profile</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-link"></i><span>Link Social Accounts</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-calendar-alt"></i><span>Calendar</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-address-book"></i><span>Contacts</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-envelope"></i><span>Email</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-check-square"></i><span>Tasks</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-gifts"></i><span>Gift & Handwritten Note</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-file-alt"></i><span>Template</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-bullhorn"></i><span>Campaign</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/icondashboard.png" alt="Dashboard" /><span>Dashboard</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/iconprofile.png" alt="profile" /><span>Profile</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/iconlink.png" alt="Link Social Accounts" /><span>Link Social Accounts</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/iconcalendar.png" alt="Calendar" /><span>Calendar</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/iconcontact.png" alt="Contacts" /><span>Contacts</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/iconemail.png" alt="Email" /><span>Email</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/icontasks.png" alt="Tasks" /><span>Tasks</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/icongifts.png" alt="Gift" /><span>Gift & Handwritten Note</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/icontemplate.png" alt="Template" /><span>Template</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon/campaign.png" alt="campaign" /><span>Campaign</span></a></li>
       </ul>
     </nav>
   </div>
@@ -49,24 +49,24 @@
   <header class="admin-header">
     <div class="container-fluid">
       <div class="row">
-        <div class="spaceLogo col"></div>
-        <div class="searchBar align-items-center col-7 px-0">
-          <form>
-             <div class="form-group m-0">
+        <div class="spaceLogo col d-flex justify-content-center align-items-center">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/sidebartoggle.png" alt="toggle" />
+          </button>
+        </div>
+        <div class="searchBar align-items-center d-none d-md-flex col-md-5">
+          <form id="serach" class="serachBlock col-md-12 px-0">
+             <div class="form-group m-0 col-12 px-0">
                 <input type="search" class="form-control" id="formsearch" aria-describedby="emailHelp" placeholder="Search">
              </div>
           </form>
         </div>
-        <div class="notification col align-items-center">
-          <ul class="nav">
-            <li><a href="#"><i class="far fa-bell"></i><span class="notification-counter"></span></a></li>
+        <div class="ml-auto">
+          <ul class="nav d-flex">
+            <li class="notification"><a href="#"><i class="far fa-bell"></i><span class="notification-counter"></span></a></li>
+            <li class="avatar"><a href="#"><img src="img/user/avatar.png" alt="Austin Fisher" /> <span class="avatarName">Austin Fisher</span></a></li>
           </ul>
-        </div>
-        <div class="avatar col align-items-center">
-          <ul class="nav">
-            <li><a href="#"><img src="img/user/avatar.png" alt="Austin Fisher" /> <span class="avatarName">Austin Fisher</span></a></li>
-          </ul>
-        </div>        
+        </div>       
       </div>
     </div>
   </header>  
@@ -79,7 +79,7 @@
         <div class="col-12">
           <div class="viewFilter">
             <div class="row">
-              <div class="col-auto leftView">
+              <div class="col-md-auto leftView">
                 <ul class="nav navcheck py-3">
                   <li>
                     <a href="#"><span></span> New</a>
@@ -87,8 +87,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-auto ml-auto mb-5 d-flex rightView">
-                <ul class="nav tabs mr-3">
+              <div class="col-md-auto ml-md-auto mb-5 d-flex rightView">
+                <ul class="nav tabs select mr-3">
                   <li><a href="#">Import Contact</a></li>
                   <li><a href="#">Export Contact</a></li>
                   <li><a href="#">Add Contact</a></li>
@@ -102,8 +102,8 @@
         </div>        
         <div class="pageHeading col">
         <div class="row">
-          <h1 class="pageTitle col-auto">Contacts</h1>
-          <div class="ml-auto col-auto">
+          <h1 class="pageTitle col-md-auto">Contacts</h1>
+          <div class="ml-auto col-md-auto">
           <form class="contactsearch" id="contact-search">
              <div class="form-group m-0">
                 <input type="search" class="form-control" id="formsearch" aria-describedby="emailHelp" placeholder="Search">
@@ -116,83 +116,85 @@
           </div>
         </div>
         <div class="col-12 tableViewContent">
-          <div class="viewGroup">
-            <div class="viewHeader">
-              <div class="row">
-                <div class="col-1 headCTop">#</div>
-                <div class="col-2 headCTop">Name</div>
-                <div class="col-2 headCTop">Email</div>
-                <div class="col-2 headCTop">Phone Number</div>
-                <div class="col-2 headCTop">Company</div>
-                <div class="col-2 headCTop">Social</div>
-                <div class="col headCTop">Action</div>
+          <div class="table-responsive">
+            <div class="viewGroup">
+              <div class="viewHeader d-none d-md-block">
+                <div class="row">
+                  <div class="col-md-1 headCTop">#</div>
+                  <div class="col-md-2 headCTop">Name</div>
+                  <div class="col-md-2 headCTop">Email</div>
+                  <div class="col-md-2 headCTop">Phone Number</div>
+                  <div class="col-md-2 headCTop">Company</div>
+                  <div class="col-md-2 headCTop">Social</div>
+                  <div class="col-md headCTop">Action</div>
+                </div>
               </div>
-            </div>
-            <div class="viewContent">
-              <div class="row">
-                <div class="col headTop">1</div>
-                <div class="col-2 headTop"><div class="userInfo"><div class="avatarImg bgBlue"><img src="img/user/avatar.png" alt="Austin Fisher" /></div><div class="avatarName">Sam Clark</div></div></div>
-                <div class="col-2 headTop">sam.clark@email.com</div>
-                <div class="col-2 headTop">+44 7700 900685</div>
-                <div class="col-2 headTop">Globex Corporation</div>
-                <div class="col-2 headTop"><ul class="iconSocial nav">
-                      <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconLink.png" alt="Linkedin" /></a></li>
-                    </ul></div>
-                <div class="col headTop"><i class="fas fa-ellipsis-h"></i></div>
-              </div>
-              <div class="row">
-                <div class="col headTop">2</div>
-                <div class="col-2 headTop"><div class="userInfo"><div class="avatarImg bgGreen">JT</div><div class="avatarName">Sam Clark</div></div></div>
-                <div class="col-2 headTop">sam.clark@email.com</div>
-                <div class="col-2 headTop">+44 7700 900685</div>
-                <div class="col-2 headTop">Globex Corporation</div>
-                <div class="col-2 headTop"><ul class="iconSocial nav">
-                      <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconLink.png" alt="Linkedin" /></a></li>
-                    </ul></div>
-                <div class="col headTop"><i class="fas fa-ellipsis-h"></i></div>
-              </div>
-              <div class="row">
-                <div class="col headTop">3</div>
-                <div class="col-2 headTop"><div class="userInfo"><div class="avatarImg bgBlue"><img src="img/user/avatarTwo.png" alt="Austin Fisher" /></div><div class="avatarName">Sam Clark</div></div></div>
-                <div class="col-2 headTop">sam.clark@email.com</div>
-                <div class="col-2 headTop">+44 7700 900685</div>
-                <div class="col-2 headTop">Globex Corporation</div>
-                <div class="col-2 headTop"><ul class="iconSocial nav">
-                      <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconLink.png" alt="Linkedin" /></a></li>
-                    </ul></div>
-                <div class="col headTop"><i class="fas fa-ellipsis-h"></i></div>
-              </div>
-              <div class="row">
-                <div class="col headTop">4</div>
-                <div class="col-2 headTop"><div class="userInfo"><div class="avatarImg bgOrange">TN</div><div class="avatarName">Sam Clark</div></div></div>
-                <div class="col-2 headTop">sam.clark@email.com</div>
-                <div class="col-2 headTop">+44 7700 900685</div>
-                <div class="col-2 headTop">Globex Corporation</div>
-                <div class="col-2 headTop"><ul class="iconSocial nav">
-                      <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconLink.png" alt="Linkedin" /></a></li>
-                    </ul></div>
-                <div class="col headTop"><i class="fas fa-ellipsis-h"></i></div>
-              </div>
-              <div class="row">
-                <div class="col headTop">5</div>
-                <div class="col-2 headTop"><div class="userInfo"><div class="avatarImg bgBlue"><img src="img/user/avatarThree.png" alt="Austin Fisher" /></div><div class="avatarName">Sam Clark</div></div></div>
-                <div class="col-2 headTop">sam.clark@email.com</div>
-                <div class="col-2 headTop">+44 7700 900685</div>
-                <div class="col-2 headTop">Globex Corporation</div>
-                <div class="col-2 headTop"><ul class="iconSocial nav">
-                      <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
-                      <li><a href="#"><img src="img/icon/iconLink.png" alt="Linkedin" /></a></li>
-                    </ul></div>
-                <div class="col headTop"><i class="fas fa-ellipsis-h"></i></div>
+              <div class="viewContent">
+                <div class="row">
+                  <div class="col-md d-none d-md-block headTop">1</div>
+                  <div class="col-md-2 headTop"><div class="userInfo"><div class="avatarImg bgBlue"><img src="img/user/avatar.png" alt="Austin Fisher" /></div><div class="avatarName">Sam Clark</div></div></div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-envelope"></i></span>sam.clark@email.com</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="fas fa-phone-square"></i></span>+44 7700 900685</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-building"></i></span>Globex Corporation</div>
+                  <div class="col-md-2 headTop"><ul class="iconSocial nav">
+                        <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconlinkedin.png" alt="Linkedin" /></a></li>
+                      </ul></div>
+                  <div class="col-md headTop ellipDropdown"><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+                <div class="row">
+                  <div class="col-md d-none d-md-block headTop">2</div>
+                  <div class="col-md-2 headTop"><div class="userInfo"><div class="avatarImg bgGreen">JT</div><div class="avatarName">Sam Clark</div></div></div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-envelope"></i></span>sam.clark@email.com</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="fas fa-phone-square"></i></span>+44 7700 900685</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-building"></i></span>Globex Corporation</div>
+                  <div class="col-md-2 headTop"><ul class="iconSocial nav">
+                        <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconlinkedin.png" alt="Linkedin" /></a></li>
+                      </ul></div>
+                  <div class="col-md headTop ellipDropdown"><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+                <div class="row">
+                  <div class="col-md d-none d-md-block headTop">3</div>
+                  <div class="col-md-2 headTop"><div class="userInfo"><div class="avatarImg bgBlue"><img src="img/user/avatarTwo.png" alt="Austin Fisher" /></div><div class="avatarName">Sam Clark</div></div></div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-envelope"></i></span>sam.clark@email.com</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="fas fa-phone-square"></i></span>+44 7700 900685</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-building"></i></span>Globex Corporation</div>
+                  <div class="col-md-2 headTop"><ul class="iconSocial nav">
+                        <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconlinkedin.png" alt="Linkedin" /></a></li>
+                      </ul></div>
+                  <div class="col-md headTop ellipDropdown"><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+                <div class="row">
+                  <div class="col-md d-none d-md-block headTop">4</div>
+                  <div class="col-md-2 headTop"><div class="userInfo"><div class="avatarImg bgOrange">TN</div><div class="avatarName">Sam Clark</div></div></div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-envelope"></i></span>sam.clark@email.com</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="fas fa-phone-square"></i></span>+44 7700 900685</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-building"></i></span>Globex Corporation</div>
+                  <div class="col-md-2 headTop"><ul class="iconSocial nav">
+                        <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconlinkedin.png" alt="Linkedin" /></a></li>
+                      </ul></div>
+                  <div class="col-md headTop ellipDropdown"><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+                <div class="row">
+                  <div class="col-md d-none d-md-block headTop">5</div>
+                  <div class="col-md-2 headTop"><div class="userInfo"><div class="avatarImg bgBlue"><img src="img/user/avatarThree.png" alt="Austin Fisher" /></div><div class="avatarName">Sam Clark</div></div></div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-envelope"></i></span>sam.clark@email.com</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="fas fa-phone-square"></i></span>+44 7700 900685</div>
+                  <div class="col-md-2 headTop"><span class="icon d-md-none"><i class="far fa-building"></i></span>Globex Corporation</div>
+                  <div class="col-md-2 headTop"><ul class="iconSocial nav">
+                        <li><a href="#"><img src="img/icon/iconGoogle.png" alt="Google" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconTwitter.png" alt="Twitter" /></a></li>
+                        <li><a href="#"><img src="img/icon/iconlinkedin.png" alt="Linkedin" /></a></li>
+                      </ul></div>
+                  <div class="col-md headTop ellipDropdown"><i class="fas fa-ellipsis-h"></i></div>
+                </div>
               </div>
             </div>
           </div>

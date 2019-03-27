@@ -27,6 +27,9 @@
 }
 .viewFilter {
   .leftView {
+    @media screen and (max-width: 768px) {
+      padding-bottom: 20px;
+    }
     .navcheck {
       li {
         a {
@@ -77,6 +80,7 @@
       border: solid 1px $white1;
       border-radius: 35px;
       background-color: $white;
+      margin-left: auto;
       li {
         a {
           height: 50px;
@@ -93,6 +97,21 @@
           &:focus {
             background: linear-gradient(-35deg, $voltaire, $voltaire2);
             color: $white;
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        &.select {
+          margin-left: 0;
+          li {
+            width: 100%;
+            display: none;
+            &:first-child {
+              display: block;
+            }
+            &:focus {
+              display: block;
+            }
           }
         }
       }
