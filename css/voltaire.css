@@ -199,14 +199,20 @@ img ::-moz-selection {
   background: transparent; }
 
 .mainContent {
-  padding: 140px 15px 15px 330px;
-  box-shadow: inset 0 0 15px rgba(0, 158, 241, 0.0784314); }
+  padding: 140px 15px 15px;
+  box-shadow: inset 0 0 15px rgba(0, 158, 241, 0.0784314);
+  transition: transform ease .5s;
+  transform: translateX(0); }
   @media screen and (max-width: 991px) {
     .mainContent {
       padding: 140px 0 15px; } }
   @media screen and (max-width: 768px) {
     .mainContent {
       padding: 100px 0 15px; } }
+
+.show-nav .mainContent {
+  transition: transform ease .5s;
+  transform: translateX(315px); }
 
 .pageTitle {
   color: #00152d;
@@ -299,6 +305,9 @@ img ::-moz-selection {
     .viewFilter .rightView .tabs li a:hover, .viewFilter .rightView .tabs li a:focus {
       background: linear-gradient(-35deg, #009ef1, #00a7ff);
       color: #fff; }
+    @media screen and (max-width: 600px) {
+      .viewFilter .rightView .tabs li a {
+        padding: 0 20px; } }
   @media screen and (max-width: 768px) {
     .viewFilter .rightView .tabs.select {
       margin-left: 0; }
@@ -317,7 +326,7 @@ img ::-moz-selection {
   background-color: #009ef1;
   box-shadow: 0 0 10px rgba(0, 158, 241, 0.0784314);
   z-index: 3;
-  transition: transform ease .2s;
+  transition: transform ease .5s;
   transform: translateX(-100%); }
   .adminSidebar .logo {
     box-shadow: inset 0 0 10px rgba(0, 158, 241, 0.0784314);
@@ -380,6 +389,7 @@ img ::-moz-selection {
         transition: .3s color ease-in-out; }
   .adminSidebar.show {
     transform: translateX(0%);
+    transition: transform ease .5s;
     width: 315px; }
 
 .admin-header {
@@ -389,7 +399,9 @@ img ::-moz-selection {
   border-bottom: solid 1px #f1f1f1;
   background-color: #fff;
   box-shadow: inset 0 0 10px rgba(0, 158, 241, 0.0784314);
-  z-index: 2; }
+  z-index: 2;
+  transition: transform ease .5s;
+  transform: translateX(0); }
   .admin-header .spaceLogo {
     max-width: 100px;
     box-shadow: inset 0 0 10px rgba(0, 158, 241, 0.0784314);
@@ -483,6 +495,10 @@ img ::-moz-selection {
             border-top: 6px solid #bfc5d1; }
           .admin-header .nav li.avatar a:hover {
             color: #009ef1; }
+
+.show-nav .admin-header {
+  transition: transform ease .5s;
+  transform: translateX(315px); }
 
 .table thead th {
   color: #009ef1;

@@ -300,13 +300,21 @@ img {
   }
 }
 .mainContent {
-  padding: 140px 15px 15px 330px;
+  padding: 140px 15px 15px;
   box-shadow: inset 0 0 15px $voltaire-shadow;
+  transition: transform ease .5s;
+  transform: translateX(0);
   @media screen and (max-width: 991px) {
     padding: 140px 0 15px;
   }
   @media screen and (max-width: 768px) {
     padding: 100px 0 15px;
+  }
+}
+.show-nav {
+  .mainContent {
+    transition: transform ease .5s;
+    transform: translateX(315px);
   }
 }
 .pageTitle {

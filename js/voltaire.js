@@ -1,7 +1,6 @@
+jQuery.noConflict();
 jQuery(document).ready(function(){
-  jQuery.noConflict();
-    jQuery('.navbutton').click(function() {
-      jQuery('body').addClass('show-nav');
-       return false;
-    });
+  jQuery('.navbutton').click(function() {
+    jQuery('body').toggleClass('show-nav');
+  });
 });
