@@ -1,0 +1,236 @@
+//
+// Voltaire - _welcome.scss
+//
+
+.welcome {
+  background-image: url('../img/welcome/shapeleft.png'), url('../img/welcome/shaperight.png');
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-attachment: fixed;
+  .voltaireArea {
+    padding: 1.8rem 8vw;
+    @media screen and (max-width: 768px) {
+      padding: 1rem 1vw;
+    }
+    .voltairBOX {
+      background-color: $white;
+      padding: 5vh 0;
+      position: relative;
+      width: 100%;
+      min-height: calc(100vh - 60px);
+      @media screen and (max-width: 768px) {
+        min-height: calc(100vh - 30px);
+      }
+      .voltairBOXInner {
+        position: static;
+        .voltaireHeading {
+          .pageHeading {
+            font-size: 70px;
+            text-transform: uppercase;
+            color: $voltaire3;
+            @media screen and (max-width: 768px) {
+              font-size: 3rem;
+            }
+          }
+        }
+        .voltaireSubHeading {
+          font-size: 20px;
+          color: $voltaire;
+          padding-bottom: 15px;
+          @media screen and (max-width: 768px) {
+            font-size: 18px;
+          }
+        }
+        .voltaireArt {
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        .voltaireProfile {
+          position: absolute;
+          left: 0;
+          bottom: 30px;
+          .btn {
+            min-width: 270px;
+            @media screen and (max-width: 400px) {
+              min-width: 250px;
+            }
+          }
+        }
+      }
+      .voltaireLogin {
+        .loginBox {
+          padding: 0 80px;
+          position: relative;
+          .blockTitle {
+            color: $gray-base9;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            position: relative;
+            &::before {
+              content: '';
+              width: 5px;
+              height: 100%;
+              position: absolute;
+              left: -80px;
+              top: 0;
+              background-color: $voltaire;
+              border-radius: 0 10px 10px 0;
+              @media screen and (max-width: 992px) {
+                left: -40px;
+              }
+              @media screen and (max-width: 480px) {
+                left: -20px;
+              }
+            }
+          }
+          form {
+            .form-control {
+              color: $gray-base9;
+              border-radius: 0;
+              margin-top: -1px;
+              padding-left: 20px;
+              padding-right: 65px;
+              min-height: calc(65px);
+              &:first-child {
+                border-radius: 5px 5px 0 0;
+              }
+              &:nth-child(2) {
+                border-radius: 0 0 5px 5px;
+              }
+              &.iconuser {
+                background: url('../img/login/user.png') no-repeat 95% center;
+              }
+              &.iconpass {
+                background: url('../img/login/pass.png') no-repeat 95% center;
+              }
+            }
+            .form-check {
+              color: $gray-base8;
+            }
+            .forgotPassword {
+              a {
+                text-decoration: underline;
+                color: $voltaire;
+              }
+            }
+            .form-action {
+              .btn {
+                cursor: pointer;
+              }
+            }
+          }
+          .voltaireMedia {
+            color: $gray-base8;
+            .nav {
+              @media screen and (max-width: 768px) {
+                justify-content: center;
+              }
+              li {
+                a {
+                  box-shadow: 0 0 15px $voltaire-shadow;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  display: block;
+                  text-align: center;
+                  line-height: 46px;
+                  margin: 0 15px;
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                }
+                &.loginwith {
+                  position: relative;
+                  justify-content: center;
+                  margin-bottom: 20px;
+                  span {
+                    margin-left: -15px;
+                    background-color: $white;
+                    position: relative;
+                    z-index: 2;
+                    padding-right: 10px;
+                    @media screen and (max-width: 768px) {
+                      margin-left: 0;
+                      padding-left: 10px;
+                    }
+                  }
+                  &::before {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: $gray-lightest;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                  }
+                }
+              }
+            }
+          }
+          .voltairesighup {
+            margin-bottom: -30px;
+            color: $gray-base8;
+            p {
+              margin: 0;
+            }
+            @media screen and (max-width: 768px) {
+              margin-bottom: 0;
+            }
+          }
+          @media screen and (max-width: 992px) {
+            padding: 0 40px;
+          }
+          @media screen and (max-width: 480px) {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  &.user-login {
+    background-image: url('../img/welcome/shapeleft.png'), url('../img/welcome/shaperight.png'), url('../img/welcome/shapecircle.png'), url('../img/welcome/shapetrig.png'), url('../img/welcome/shapesq.png');
+    background-position: left top, right bottom, left bottom, right top, right 35vh;
+    .voltaireArea {
+      .voltairBOX {
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 38%;
+          height: 100%;
+          background: linear-gradient(-35deg, $voltaire4, $voltaire2);
+          -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+        &::after {
+          content: '';
+          background-image: url('../img/welcome/shapesq1.png');
+          background-repeat: no-repeat;
+          width: 54px;
+          height: 54px;
+          position: absolute;
+          left: 50%;
+          top: -27px;
+          margin-left: -27px;
+        }
+      }
+    }
+  }
+}
+.imagePolygon {
+  display: -ms-flexbox;
+  display: flex;
+  img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+}
