@@ -66,13 +66,16 @@
       .form-group {
         padding: 0 50px;
         margin-bottom: 35px;
+        @media screen and (max-width: 768px) {
+          padding: 0 20px;
+        }
         .form-control {
           border-color: $gray-alt;
           border-width: .1rem;
           font-size: .9rem;
           color: $form-control;
           padding: 10px 15px;
-          height: calc(2.6rem + 2px);
+          min-height: calc(2.6rem + 2px);
         }
         select {
           background-image: url('../img/profile/iconSelect.png');
@@ -111,17 +114,69 @@
     h2 {
       font-size: 35px;
       color: $voltaire1;
+      @media screen and (max-width: 768px) {
+        font-size: 25px;
+      }
     }
   }
   .boxText {
+    padding: 30px 40px;
     .btn-text {
       width: 100%;
       min-height: 150px;
       display: flex;
-      justify-content: center;
-      align-self: center;
       border: solid .1rem $gray-base6;
       border-radius: 5px;
+      color: $gray-base6;
+      font-size: 22px;
+      position: relative;
+      span {
+        padding: 15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        color: $voltaire;
+        border-color: $voltaire;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+    }
+  }
+  .form-action {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    .btn {
+      min-width: 140px;
+      padding-left: 25px;
+      cursor: pointer;
+      @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+.writing {
+  .voltaireArea {
+    .voltairBOX {
+      padding: 12vh 0;
+      @media screen and (max-width: 600px) {
+        padding: 5vh 0;
+      }
     }
   }
 }

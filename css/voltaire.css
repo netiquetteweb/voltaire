@@ -800,8 +800,14 @@ img ::-moz-selection {
             .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder .row .forgotPassword a {
               text-decoration: underline;
               color: #009ef1; }
-            .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder .row .form-action .btn {
-              cursor: pointer; }
+        @media screen and (max-width: 767px) {
+          .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .form-action {
+            text-align: center; } }
+        .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .form-action .btn {
+          cursor: pointer;
+          -ms-flex-pack: center;
+          justify-content: center;
+          text-align: center; }
         .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .voltaireMedia {
           color: #ababab; }
           @media screen and (max-width: 768px) {
@@ -828,7 +834,7 @@ img ::-moz-selection {
               position: relative;
               z-index: 2;
               padding-right: 10px; }
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 767px) {
                 .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .voltaireMedia .nav li.loginwith span {
                   margin-left: 0;
                   padding-left: 10px; } }
@@ -840,7 +846,7 @@ img ::-moz-selection {
               position: absolute;
               left: 0;
               top: 50%; }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
               .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .voltaireMedia .nav li.loginwith {
                 margin-bottom: 20px;
                 justify-content: center; } }
@@ -871,7 +877,7 @@ img ::-moz-selection {
       background: linear-gradient(-35deg, #43beff, #00a7ff);
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%); }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .welcome.user-login .voltaireArea .voltairBOX::before {
           display: none; } }
     .welcome.user-login .voltaireArea .voltairBOX::after {
@@ -953,13 +959,16 @@ img ::-moz-selection {
   .profile .profileFill form .form-group {
     padding: 0 50px;
     margin-bottom: 35px; }
+    @media screen and (max-width: 768px) {
+      .profile .profileFill form .form-group {
+        padding: 0 20px; } }
     .profile .profileFill form .form-group .form-control {
       border-color: #dadfe2;
       border-width: .1rem;
       font-size: .9rem;
       color: #889099;
       padding: 10px 15px;
-      height: calc(2.6rem + 2px); }
+      min-height: calc(2.6rem + 2px); }
     .profile .profileFill form .form-group select {
       background-image: url("../img/profile/iconSelect.png");
       background-repeat: no-repeat;
@@ -988,12 +997,55 @@ img ::-moz-selection {
 .writingBox .pageHeading h2 {
   font-size: 35px;
   color: #00152d; }
+  @media screen and (max-width: 768px) {
+    .writingBox .pageHeading h2 {
+      font-size: 25px; } }
 
-.writingBox .boxText .btn-text {
-  width: 100%;
-  min-height: 150px;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  border: solid 0.1rem #bfc5d1;
-  border-radius: 5px; }
+.writingBox .boxText {
+  padding: 30px 40px; }
+  .writingBox .boxText .btn-text {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    border: solid 0.1rem #bfc5d1;
+    border-radius: 5px;
+    color: #bfc5d1;
+    font-size: 22px;
+    position: relative; }
+    .writingBox .boxText .btn-text span {
+      padding: 15px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%); }
+    .writingBox .boxText .btn-text:hover, .writingBox .boxText .btn-text:focus, .writingBox .boxText .btn-text:active, .writingBox .boxText .btn-text.active {
+      color: #009ef1;
+      border-color: #009ef1; }
+  @media screen and (max-width: 768px) {
+    .writingBox .boxText {
+      padding: 20px; } }
+
+.writingBox .form-action {
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
+  .writingBox .form-action .btn {
+    min-width: 140px;
+    padding-left: 25px;
+    cursor: pointer; }
+    @media screen and (max-width: 768px) {
+      .writingBox .form-action .btn {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto; } }
+  @media screen and (max-width: 768px) {
+    .writingBox .form-action {
+      position: relative;
+      right: 0;
+      top: 0; } }
+
+.writing .voltaireArea .voltairBOX {
+  padding: 12vh 0; }
+  @media screen and (max-width: 600px) {
+    .writing .voltaireArea .voltairBOX {
+      padding: 5vh 0; } }
