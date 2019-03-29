@@ -184,6 +184,9 @@ strong {
   .btn-ico .file-size {
     color: #009ef1; }
 
+.form-control:focus {
+  box-shadow: none; }
+
 ::-moz-selection {
   background: #009ef1;
   color: #fff;
@@ -240,6 +243,11 @@ img ::-moz-selection {
 .voltaire-shadow-inset {
   box-shadow: inset 0 0 15px rgba(0, 158, 241, 0.0784314); }
 
+.tokenfield .token {
+  background-color: #009ef1;
+  border-color: #009ef1;
+  color: #fff; }
+
 .contactsearch {
   position: relative; }
   .contactsearch .form-control {
@@ -256,6 +264,8 @@ img ::-moz-selection {
       background-color: #009ef1;
       border: 0;
       border-radius: 50%;
+      min-width: 50px;
+      max-width: 50px;
       width: 50px;
       height: 50px;
       justify-content: center; }
@@ -303,6 +313,7 @@ img ::-moz-selection {
   background-color: #fff;
   margin-left: auto; }
   .viewFilter .rightView .tabs li a {
+    min-width: 10px;
     height: 50px;
     display: flex;
     padding: 0 50px;
@@ -734,30 +745,31 @@ img ::-moz-selection {
             @media screen and (max-width: 480px) {
               .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .blockTitle::before {
                 left: -20px; } }
-        .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .form-control {
-          color: #363636;
-          border-radius: 0;
-          margin-top: -1px;
-          padding-left: 20px;
-          padding-right: 20px;
-          min-height: calc(65px); }
-          .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .form-control:first-child {
-            border-radius: 5px 5px 0 0; }
-          .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .form-control:nth-child(2) {
-            border-radius: 0 0 5px 5px; }
-          .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .form-control.iconuser {
-            background: url("../img/login/user.png") no-repeat 95% center;
-            padding-right: 65px; }
-          .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .form-control.iconpass {
-            background: url("../img/login/pass.png") no-repeat 95% center;
-            padding-right: 65px; }
-        .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .form-check {
-          color: #ababab; }
-        .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .forgotPassword a {
-          text-decoration: underline;
-          color: #009ef1; }
-        .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .form-action .btn {
-          cursor: pointer; }
+        .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder {
+          border: solid 2px #eeeeee;
+          border-radius: 6px; }
+          .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder .row {
+            margin: 0 -1px; }
+            .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder .row .form-control {
+              color: #363636;
+              border-radius: 0;
+              padding-left: 20px;
+              padding-right: 20px;
+              min-height: calc(65px);
+              border-color: #eeeeee; }
+              .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder .row .form-control.iconuser {
+                background: url("../img/login/user.png") no-repeat 95% center;
+                padding-right: 65px; }
+              .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder .row .form-control.iconpass {
+                background: url("../img/login/pass.png") no-repeat 95% center;
+                padding-right: 65px; }
+            .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder .row .form-check {
+              color: #ababab; }
+            .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder .row .forgotPassword a {
+              text-decoration: underline;
+              color: #009ef1; }
+            .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox form .boxBorder .row .form-action .btn {
+              cursor: pointer; }
         .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .voltaireMedia {
           color: #ababab; }
           @media screen and (max-width: 768px) {
@@ -767,17 +779,17 @@ img ::-moz-selection {
             box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
             width: 50px;
             height: 50px;
+            border: solid 1px #eeeeee;
             border-radius: 50%;
             display: block;
             text-align: center;
             line-height: 46px;
-            margin: 0 15px; }
+            margin: 0 15px;
+            animation: pulse 2s infinite; }
             .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .voltaireMedia .nav li a:last-child {
               margin-right: 0; }
           .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .voltaireMedia .nav li.loginwith {
-            position: relative;
-            justify-content: center;
-            margin-bottom: 20px; }
+            position: relative; }
             .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .voltaireMedia .nav li.loginwith span {
               margin-left: -15px;
               background-color: #fff;
@@ -796,6 +808,10 @@ img ::-moz-selection {
               position: absolute;
               left: 0;
               top: 50%; }
+            @media screen and (max-width: 768px) {
+              .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .voltaireMedia .nav li.loginwith {
+                margin-bottom: 20px;
+                justify-content: center; } }
         .welcome .voltaireArea .voltairBOX .voltaireLogin .loginBox .voltairesighup {
           margin-bottom: -30px;
           color: #ababab; }
@@ -836,6 +852,9 @@ img ::-moz-selection {
       left: 50%;
       top: -27px;
       margin-left: -27px; }
+  .welcome.profile {
+    background-image: url("../img/welcome/shapeleft.png"), url("../img/welcome/shaperight.png"), url("../img/welcome/shapecircle.png"), url("../img/welcome/shapetrig.png"), url("../img/welcome/shapesq.png");
+    background-position: left top, right bottom, left bottom, right top, right 35vh; }
 
 .imagePolygon {
   display: -ms-flexbox;
@@ -844,3 +863,89 @@ img ::-moz-selection {
     max-width: 100%;
     min-width: 100%;
     height: auto; }
+
+.profile .coverImage {
+  margin-top: -5vh; }
+  .profile .coverImage img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 3px 3px 0 0; }
+
+.profile .userPicture {
+  position: relative; }
+  .profile .userPicture .userImage {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: -122px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%); }
+    .profile .userPicture .userImage img {
+      border: solid 4px #fff;
+      border-radius: 50%;
+      max-width: 100%;
+      height: auto; }
+    .profile .userPicture .userImage .editProfile {
+      background-color: #009ef1;
+      border-radius: 50%;
+      border: solid 4px #fff;
+      position: absolute;
+      right: -5px;
+      bottom: 20px;
+      width: 48px;
+      height: 48px;
+      text-align: center;
+      line-height: 35px;
+      z-index: 2; }
+      @media screen and (max-width: 768px) {
+        .profile .userPicture .userImage .editProfile {
+          width: 30px;
+          height: 30px;
+          line-height: 18px; } }
+      .profile .userPicture .userImage .editProfile img {
+        border: 0;
+        border-radius: 0; }
+        @media screen and (max-width: 768px) {
+          .profile .userPicture .userImage .editProfile img {
+            max-width: 10px; } }
+    @media screen and (max-width: 768px) {
+      .profile .userPicture .userImage {
+        width: 100px;
+        height: 100px;
+        top: -20px; } }
+
+.profile .profileFill {
+  padding: 120px 50px 0; }
+  .profile .profileFill form .form-group {
+    padding: 0 50px;
+    margin-bottom: 35px; }
+    .profile .profileFill form .form-group .form-control {
+      border-color: #dadfe2;
+      border-width: .1rem;
+      font-size: .9rem;
+      color: #889099;
+      padding: 10px 15px;
+      height: auto !important; }
+    .profile .profileFill form .form-group select {
+      background-image: url("../img/profile/iconSelect.png");
+      background-repeat: no-repeat;
+      background-position: 97% center;
+      padding-right: 35px !important;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+  .profile .profileFill form .form-action .btn {
+    min-width: 140px;
+    padding-left: 25px;
+    cursor: pointer;
+    margin-left: auto; }
+    @media screen and (max-width: 768px) {
+      .profile .profileFill form .form-action .btn {
+        margin-left: auto;
+        margin-right: auto; } }
+  @media screen and (max-width: 768px) {
+    .profile .profileFill {
+      padding-left: 0;
+      padding-right: 0; } }

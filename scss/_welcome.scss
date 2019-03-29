@@ -88,40 +88,41 @@
             }
           }
           form {
-            .form-control {
-              color: $gray-base9;
-              border-radius: 0;
-              margin-top: -1px;
-              padding-left: 20px;
-              padding-right: 20px;
-              min-height: calc(65px);
-              &:first-child {
-                border-radius: 5px 5px 0 0;
-              }
-              &:nth-child(2) {
-                border-radius: 0 0 5px 5px;
-              }
-              &.iconuser {
-                background: url('../img/login/user.png') no-repeat 95% center;
-                padding-right: 65px;
-              }
-              &.iconpass {
-                background: url('../img/login/pass.png') no-repeat 95% center;
-                padding-right: 65px;
-              }
-            }
-            .form-check {
-              color: $gray-base8;
-            }
-            .forgotPassword {
-              a {
-                text-decoration: underline;
-                color: $voltaire;
-              }
-            }
-            .form-action {
-              .btn {
-                cursor: pointer;
+            .boxBorder {
+              border: solid 2px $gray-lightest;
+              border-radius: 6px;
+              .row {
+                margin: 0 -1px;
+                .form-control {
+                  color: $gray-base9;
+                  border-radius: 0;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  min-height: calc(65px);
+                  border-color: $gray-lightest;
+                  &.iconuser {
+                    background: url('../img/login/user.png') no-repeat 95% center;
+                    padding-right: 65px;
+                  }
+                  &.iconpass {
+                    background: url('../img/login/pass.png') no-repeat 95% center;
+                    padding-right: 65px;
+                  }
+                }
+                .form-check {
+                  color: $gray-base8;
+                }
+                .forgotPassword {
+                  a {
+                    text-decoration: underline;
+                    color: $voltaire;
+                  }
+                }
+                .form-action {
+                  .btn {
+                    cursor: pointer;
+                  }
+                }
               }
             }
           }
@@ -136,19 +137,19 @@
                   box-shadow: 0 0 15px $voltaire-shadow;
                   width: 50px;
                   height: 50px;
+                  border: solid 1px $gray-lightest;
                   border-radius: 50%;
                   display: block;
                   text-align: center;
                   line-height: 46px;
                   margin: 0 15px;
+                  animation: pulse 2s infinite;
                   &:last-child {
                     margin-right: 0;
                   }
                 }
                 &.loginwith {
                   position: relative;
-                  justify-content: center;
-                  margin-bottom: 20px;
                   span {
                     margin-left: -15px;
                     background-color: $white;
@@ -168,6 +169,10 @@
                     position: absolute;
                     left: 0;
                     top: 50%;
+                  }
+                  @media screen and (max-width: 768px) {
+                    margin-bottom: 20px;
+                    justify-content: center;
                   }
                 }
               }
@@ -225,6 +230,10 @@
         }
       }
     }
+  }
+  &.profile {
+    background-image: url('../img/welcome/shapeleft.png'), url('../img/welcome/shaperight.png'), url('../img/welcome/shapecircle.png'), url('../img/welcome/shapetrig.png'), url('../img/welcome/shapesq.png');
+    background-position: left top, right bottom, left bottom, right top, right 35vh;
   }
 }
 .imagePolygon {
