@@ -72,7 +72,7 @@
           font-size: .9rem;
           color: $form-control;
           padding: 10px 15px;
-          height: auto !important;
+          height: calc(2.6rem + 2px);
         }
         select {
           background-image: url('../img/profile/iconSelect.png');
@@ -100,6 +100,28 @@
     @media screen and (max-width: 768px) {
       padding-left: 0;
       padding-right: 0;
+    }
+  }
+  .ui-helper-hidden-accessible {
+    display: none;
+  }
+}
+.writingBox {
+  .pageHeading {
+    h2 {
+      font-size: 35px;
+      color: $voltaire1;
+    }
+  }
+  .boxText {
+    .btn-text {
+      width: 100%;
+      min-height: 150px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      border: solid .1rem $gray-base6;
+      border-radius: 5px;
     }
   }
 }
