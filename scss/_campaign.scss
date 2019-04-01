@@ -1,0 +1,292 @@
+//
+// Voltaire - _campaign.scss
+//
+
+.voltaireCampaign {
+  .ViewTabs {
+    .nav {
+      border: solid 1px $voltaire;
+      border-radius: 5px;
+      margin-bottom: 45px;
+      li {
+        padding: 0;
+        a {
+          color: $voltaire-text;
+          font-size: 20px;
+          font-weight: bold;
+          justify-content: center;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          padding: 15px 10px;
+          border-radius: 5px;
+          margin: 0 -1px -1px;
+          &:hover,
+          &:focus,
+          &.active {
+            background-color: $voltaire;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .viewCampaign {
+    .view-row {
+      border: solid 2px $white1;
+      border-radius: 5px;
+      .userPicture {
+        margin: -1px;
+        img {
+          border-radius: 5px;
+          max-width: 100%;
+          min-width: 100%;
+          height: auto;
+        }
+      }
+      .userDetails {
+        padding-top: 20px;
+        padding-right: 40px;
+        @media screen and (max-width: 768px) {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        .profile-name {
+          color: $voltaire;
+          font-size: 25px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        .nav {
+          &.navDetails {
+            padding: 0;
+            color: $gray;
+            li {
+              font-size: 14px;
+              border-right: solid 1px $gray-base6;
+              padding: 0 15px;
+              @media screen and (max-width: 768px) {
+                padding: 0 7px;
+                font-size: 12px;
+              }
+              &:first-child {
+                padding-left: 0;
+              }
+              &:last-child {
+                border: 0;
+              }
+              &.active {
+                color: $voltaire1;
+              }
+            }
+          }
+          &.navicon {
+            font-size: 12px;
+            li {
+              padding: 0 15px;
+              @media screen and (max-width: 768px) {
+                padding: 0 5px;
+              }
+              a {
+                color: $gray;
+                &:hover,
+                &:focus {
+                  color: $voltaire1;
+                }
+                span {
+                  margin-right: 8px;
+                }
+              }
+            }
+          }
+        }
+        .navDescription {
+          font-size: 14px;
+          color: $gray;
+        }
+        .separate {
+          .borderT {
+            border-top: solid 1px $gray-lightest;
+            margin-left: -30px;
+            margin-right: -25px;
+            height: 1px;
+            @media screen and (max-width: 768px) {
+              margin-left: -15px;
+              margin-right: -15px;
+            }
+          }
+        }
+        .iconControl {
+          width: 100%;
+          position: relative;
+          margin-top: 5px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          .nav {
+            li {
+              @media screen and (max-width: 768px) {
+                max-width: 33.3333%;
+                width: 33.3333%;
+                flex: 0 0 33.3333%;
+                margin-bottom: 15px;
+              }
+              a {
+                text-indent: -9999px;
+                width: 30px;
+                min-height: 25px;
+                display: -ms-flexbox;
+                display: flex;
+                &.iconfacebook {
+                  background-image: url('../img/contactInsights/iconfacebook.png');
+                  background-color: transparent;
+                  background-repeat: no-repeat;
+                  background-position: left center;
+                  &:hover,
+                  &:focus {
+                    background-image: url('../img/contactInsights/iconfacebookhover.png');
+                  }
+                }
+                &.iconcalendar {
+                  background-image: url('../img/contactInsights/iconcal.png');
+                  background-color: transparent;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  margin: 0 auto;
+                  &:hover,
+                  &:focus {
+                    background-image: url('../img/contactInsights/iconcalhover.png');
+                  }
+                }
+                &.iconeye {
+                  background-image: url('../img/contactInsights/iconeye.png');
+                  background-color: transparent;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  margin: 0 auto;
+                  &:hover,
+                  &:focus {
+                    background-image: url('../img/contactInsights/iconeyehover.png');
+                  }
+                }
+                &.iconmail {
+                  background-image: url('../img/contactInsights/iconmail.png');
+                  background-color: transparent;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  margin: 0 auto;
+                  &:hover,
+                  &:focus {
+                    background-image: url('../img/contactInsights/iconmailhover.png');
+                  }
+                }
+                &.icongifts {
+                  background-image: url('../img/contactInsights/icongift.png');
+                  background-color: transparent;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  margin: 0 auto;
+                  &:hover,
+                  &:focus {
+                    background-image: url('../img/contactInsights/icongifthover.png');
+                  }
+                }
+                &.iconsetting {
+                  background-image: url('../img/contactInsights/iconsetting.png');
+                  background-color: transparent;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  margin-left: auto;
+                  &:hover,
+                  &:focus {
+                    background-image: url('../img/contactInsights/iconsettinghover.png');
+                  }
+                }
+                @media screen and (max-width: 768px) {
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
+        }
+      }
+      .viewHead {
+        padding: 0;
+        .boxTitle {
+          color: $white;
+          padding: 15px;
+          border-radius: 5px 5px 0 0;
+          font-size: 20px;
+          font-weight: bold;
+          background-color: $voltaire;
+          margin: -1px -1px 30px;
+        }
+      }
+      .viewContent {
+        padding: 0 25px;
+        .boxTitle {
+          color: $voltaire1;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            font-size: 14px;
+            color: $gray;
+            a {
+              color: $gray;
+              min-width: 100px;
+              display: inline-flex;
+              &:hover,
+              &:focus {
+                color: $voltaire;
+              }
+            }
+            .blue {
+              margin-left: 15px;
+              min-width: 100px;
+              display: inline-flex;
+              justify-content: flex-end;
+              color: $voltaire;
+              @media screen and (max-width: 768px) {
+                min-width: 50px;
+              }
+            }
+            .textBlue {
+              color: $voltaire;
+            }
+            .textdate {
+              color: $date;
+              font-size: 13px;
+            }
+          }
+        }
+        .newsBox {
+          border: solid 2px $white1;
+          border-radius: 5px;
+          padding: 10px 10px 15px;
+          height: 100%;
+          .newsImage {
+            margin: -10px -10px 7px;
+            img {
+              max-width: 100%;
+              min-width: 100%;
+              height: auto;
+              border-radius: 5px 5px 0 0;
+            }
+          }
+          .newsdate {
+            font-size: 13px;
+            color: $date;
+          }
+          .newsTitle {
+            font-size: 15px;
+            color: $gray-dark;
+          }
+        }
+      }
+    }
+  }
+}

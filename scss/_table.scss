@@ -153,6 +153,26 @@
               }
             }
           }
+          .btn-dropdown {
+            background: none;
+            box-shadow: none;
+            border: solid 1px $white;
+            border-radius: 3px;
+            padding: 5px 10px;
+            color: $gray-base6;
+            outline: none;
+            cursor: pointer;
+            &.dropdown-toggle {
+              &::after {
+                display: none;
+              }
+            }
+          }
+          &.show {
+            .btn-dropdown {
+              border: solid 1px $gray-lightest;
+            }
+          }
           &:last-child {
             text-align: center;
             color: $gray-base6;
