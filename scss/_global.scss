@@ -375,6 +375,9 @@ img {
       box-shadow: inset 0 0 15px $voltaire-shadow;
     }
   }
+  .token-input {
+    margin-bottom: 0;
+  }
 }
 .ui-autocomplete {
   background-color: $white;
@@ -487,14 +490,21 @@ img {
   border: solid 2px $white1;
   border-radius: 5px;
   li {
-    padding: .3rem 1.5rem;
+    padding: .4rem 1.2rem;
     a {
       background: none;
       color: $gray;
       font-size: 14px;
-      i,
-      img {
-        margin-right: 10px;
+      span {
+        min-width: 40px;
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+        top: 3px;
+        i,
+        img {
+          margin-right: 10px;
+        }
       }
       &:hover,
       &:focus {

@@ -89,6 +89,11 @@
         font-weight: 400;
         &:last-child {
           text-align: center;
+          max-width: 60px;
+          padding: 0;
+        }
+        &.sno {
+          max-width: 60px;
         }
       }
     }
@@ -138,7 +143,7 @@
               justify-content: center;
               align-items: center;
               transition: .3s color ease-in-out;
-              margin: 0 5px;
+              margin: 3px 5px;
               a {
                 text-decoration: none;
                 img {
@@ -168,6 +173,9 @@
               }
             }
           }
+          &.sno {
+            max-width: 60px;
+          }
           &.show {
             .btn-dropdown {
               border: solid 1px $gray-lightest;
@@ -176,6 +184,8 @@
           &:last-child {
             text-align: center;
             color: $gray-base6;
+            max-width: 60px;
+            padding: 0;
           }
           @media screen and (max-width: 768px) {
             padding-top: 5px;

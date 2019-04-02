@@ -264,6 +264,9 @@ img ::-moz-selection {
     border-color: #009ef1;
     box-shadow: inset 0 0 15px rgba(0, 158, 241, 0.0784314); }
 
+.tokenfield .token-input {
+  margin-bottom: 0; }
+
 .ui-autocomplete {
   background-color: #fff;
   border: solid 2px #dadfe2;
@@ -360,14 +363,20 @@ img ::-moz-selection {
   border: solid 2px #f1f1f1;
   border-radius: 5px; }
   .dropdown-menu li {
-    padding: .3rem 1.5rem; }
+    padding: .4rem 1.2rem; }
     .dropdown-menu li a {
       background: none;
       color: #555555;
       font-size: 14px; }
-      .dropdown-menu li a i,
-      .dropdown-menu li a img {
-        margin-right: 10px; }
+      .dropdown-menu li a span {
+        min-width: 40px;
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+        top: 3px; }
+        .dropdown-menu li a span i,
+        .dropdown-menu li a span img {
+          margin-right: 10px; }
       .dropdown-menu li a:hover, .dropdown-menu li a:focus {
         color: #009ef1; }
     .dropdown-menu li:hover, .dropdown-menu li:focus {
@@ -728,7 +737,11 @@ img ::-moz-selection {
         font-size: 14px;
         font-weight: 400; }
         .tableViewContent .viewGroup .viewHeader .headCTop:last-child {
-          text-align: center; }
+          text-align: center;
+          max-width: 60px;
+          padding: 0; }
+        .tableViewContent .viewGroup .viewHeader .headCTop.sno {
+          max-width: 60px; }
     .tableViewContent .viewGroup .viewContent .row {
       position: relative;
       padding: 25px 15px;
@@ -771,7 +784,7 @@ img ::-moz-selection {
           justify-content: center;
           align-items: center;
           transition: .3s color ease-in-out;
-          margin: 0 5px; }
+          margin: 3px 5px; }
           .tableViewContent .viewGroup .viewContent .row .headTop .iconSocial li a {
             text-decoration: none; }
             .tableViewContent .viewGroup .viewContent .row .headTop .iconSocial li a img {
@@ -792,11 +805,15 @@ img ::-moz-selection {
           cursor: pointer; }
           .tableViewContent .viewGroup .viewContent .row .headTop .btn-dropdown.dropdown-toggle::after {
             display: none; }
+        .tableViewContent .viewGroup .viewContent .row .headTop.sno {
+          max-width: 60px; }
         .tableViewContent .viewGroup .viewContent .row .headTop.show .btn-dropdown {
           border: solid 1px #eeeeee; }
         .tableViewContent .viewGroup .viewContent .row .headTop:last-child {
           text-align: center;
-          color: #bfc5d1; }
+          color: #bfc5d1;
+          max-width: 60px;
+          padding: 0; }
         @media screen and (max-width: 768px) {
           .tableViewContent .viewGroup .viewContent .row .headTop {
             padding-top: 5px;
