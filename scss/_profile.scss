@@ -4,11 +4,17 @@
 
 .profile {
   .coverImage {
+    background-color: $voltaire;
+    min-height: 178px;
     margin-top: -5vh;
+    border-radius: 3px 3px 0 0;
     img {
       max-width: 100%;
       min-width: 100%;
       border-radius: 3px 3px 0 0;
+    }
+    @media screen and (max-width: 768px) {
+      min-height: 50px;
     }
   }
   .userPicture {
@@ -169,13 +175,42 @@
       top: 0;
     }
   }
-}
-.writing {
-  .voltaireArea {
-    .voltairBOX {
-      padding: 12vh 0;
-      @media screen and (max-width: 600px) {
-        padding: 5vh 0;
+  &.connectBox {
+    .boxText {
+      padding: 0;
+      max-width: 220px;
+      margin: 5%;
+      @media screen and (max-width: 768px) {
+        margin: 10% 2%;
+      }
+      .btn-text {
+        min-height: 120px;
+        border-color: $voltaire;
+        color: $gray-dark;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        span {
+          min-width: 122px;
+          padding: 0;
+          display: -ms-flexbox;
+          display: flex;
+          transform: translateX(-50%) translateY(-100%);
+          img {
+            margin-right: 10px;
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .btn {
+        background-color: $white;
+        position: absolute;
+        left: 50%;
+        bottom: -24px;
+        min-width: 115px;
+        transform: translateX(-50%);
+        z-index: 2;
       }
     }
   }

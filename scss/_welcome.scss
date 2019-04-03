@@ -241,6 +241,30 @@
     background-image: url('../img/welcome/shapeleft.png'), url('../img/welcome/shaperight.png'), url('../img/welcome/shapecircle.png'), url('../img/welcome/shapetrig.png'), url('../img/welcome/shapesq.png');
     background-position: left top, right bottom, left bottom, right top, right 35vh;
   }
+  &.writing {
+    background-image: url('../img/welcome/shapeleft.png'), url('../img/welcome/shaperight.png'), url('../img/welcome/shapecircle.png'), url('../img/welcome/shapetrig.png'), url('../img/welcome/shapesq.png');
+    background-position: left top, right bottom, left bottom, right top, right 35vh;
+    .voltaireArea {
+      .voltairBOX {
+        padding: 12vh 0;
+        @media screen and (max-width: 600px) {
+          padding: 5vh 0;
+        }
+      }
+    }
+  }
+  &.connect {
+    background-image: url('../img/welcome/shapeleft.png'), url('../img/welcome/shaperight.png'), url('../img/welcome/shapecircle.png'), url('../img/welcome/shapetrig.png'), url('../img/welcome/shapesq.png');
+    background-position: left top, right bottom, left bottom, right top, right 35vh;
+    .voltaireArea {
+      .voltairBOX {
+        padding: 12vh 0;
+        @media screen and (max-width: 600px) {
+          padding: 5vh 0;
+        }
+      }
+    }
+  }
 }
 .imagePolygon {
   display: -ms-flexbox;

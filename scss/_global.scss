@@ -254,6 +254,17 @@ strong {
   }
 }
 
+.btn-default {
+  background-color: $white;
+  border-color: $white1;
+  color: $gray-base7;
+  &:hover,
+  &:focus {
+    background-color: $white1;
+    color: $gray-dark;
+  }
+}
+
 .btn-ico {
   margin: 15px 0 0;
   border: 1px solid transparent !important;
@@ -341,6 +352,9 @@ img {
 }
 .bgBlue {
   background-color: $voltaire;
+}
+.textBlue {
+  color: $voltaire;
 }
 .bgGreen {
   background-color: $voltairegreen;
@@ -518,6 +532,68 @@ img {
     &.cardRed {
       a {
         color: $voltairered;
+      }
+    }
+  }
+}
+/* SWITCH STYLES */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 33px;
+  margin: 0;
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white;
+    border: solid 2px $white1;
+    -webkit-transition: .4s;
+    transition: .4s;
+    &::before {
+      position: absolute;
+      content: '';
+      height: 23px;
+      width: 23px;
+      left: 4px;
+      bottom: 3px;
+      background-color: $gray-lighter;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    &.round {
+      border-radius: 33px;
+      &::before {
+        border-radius: 50%;
+      }
+    }
+  }
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked {
+      + {
+        .slider {
+          background-color: $white;
+          &::before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+            background-color: $voltaire;
+          }
+        }
+      }
+    }
+    &:focus {
+      + {
+        .slider {
+          box-shadow: 0 0 1px $voltaire-shadow;
+        }
       }
     }
   }

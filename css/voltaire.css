@@ -168,6 +168,14 @@ strong {
   background-color: #009ef1;
   color: #555555; }
 
+.btn-default {
+  background-color: #fff;
+  border-color: #f1f1f1;
+  color: #bcbcbc; }
+  .btn-default:hover, .btn-default:focus {
+    background-color: #f1f1f1;
+    color: #333333; }
+
 .btn-ico {
   margin: 15px 0 0;
   border: 1px solid transparent !important;
@@ -234,6 +242,9 @@ img ::-moz-selection {
 
 .bgBlue {
   background-color: #009ef1; }
+
+.textBlue {
+  color: #009ef1; }
 
 .bgGreen {
   background-color: #03d967; }
@@ -383,6 +394,52 @@ img ::-moz-selection {
       background: none; }
     .dropdown-menu li.cardRed a {
       color: #ff3d3d; }
+
+/* SWITCH STYLES */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 33px;
+  margin: 0; }
+  .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: solid 2px #f1f1f1;
+    -webkit-transition: .4s;
+    transition: .4s; }
+    .switch .slider::before {
+      position: absolute;
+      content: '';
+      height: 23px;
+      width: 23px;
+      left: 4px;
+      bottom: 3px;
+      background-color: #bfbfbf;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    .switch .slider.round {
+      border-radius: 33px; }
+      .switch .slider.round::before {
+        border-radius: 50%; }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+    .switch input:checked + .slider {
+      background-color: #fff; }
+      .switch input:checked + .slider::before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+        background-color: #009ef1; }
+    .switch input:focus + .slider {
+      box-shadow: 0 0 1px rgba(0, 158, 241, 0.0784314); }
 
 .contactsearch {
   position: relative; }
@@ -1018,6 +1075,22 @@ img ::-moz-selection {
   .welcome.profile {
     background-image: url("../img/welcome/shapeleft.png"), url("../img/welcome/shaperight.png"), url("../img/welcome/shapecircle.png"), url("../img/welcome/shapetrig.png"), url("../img/welcome/shapesq.png");
     background-position: left top, right bottom, left bottom, right top, right 35vh; }
+  .welcome.writing {
+    background-image: url("../img/welcome/shapeleft.png"), url("../img/welcome/shaperight.png"), url("../img/welcome/shapecircle.png"), url("../img/welcome/shapetrig.png"), url("../img/welcome/shapesq.png");
+    background-position: left top, right bottom, left bottom, right top, right 35vh; }
+    .welcome.writing .voltaireArea .voltairBOX {
+      padding: 12vh 0; }
+      @media screen and (max-width: 600px) {
+        .welcome.writing .voltaireArea .voltairBOX {
+          padding: 5vh 0; } }
+  .welcome.connect {
+    background-image: url("../img/welcome/shapeleft.png"), url("../img/welcome/shaperight.png"), url("../img/welcome/shapecircle.png"), url("../img/welcome/shapetrig.png"), url("../img/welcome/shapesq.png");
+    background-position: left top, right bottom, left bottom, right top, right 35vh; }
+    .welcome.connect .voltaireArea .voltairBOX {
+      padding: 12vh 0; }
+      @media screen and (max-width: 600px) {
+        .welcome.connect .voltaireArea .voltairBOX {
+          padding: 5vh 0; } }
 
 .imagePolygon {
   display: -ms-flexbox;
@@ -1028,11 +1101,17 @@ img ::-moz-selection {
     height: auto; }
 
 .profile .coverImage {
-  margin-top: -5vh; }
+  background-color: #009ef1;
+  min-height: 178px;
+  margin-top: -5vh;
+  border-radius: 3px 3px 0 0; }
   .profile .coverImage img {
     max-width: 100%;
     min-width: 100%;
     border-radius: 3px 3px 0 0; }
+  @media screen and (max-width: 768px) {
+    .profile .coverImage {
+      min-height: 50px; } }
 
 .profile .userPicture {
   position: relative; }
@@ -1169,11 +1248,38 @@ img ::-moz-selection {
       right: 0;
       top: 0; } }
 
-.writing .voltaireArea .voltairBOX {
-  padding: 12vh 0; }
-  @media screen and (max-width: 600px) {
-    .writing .voltaireArea .voltairBOX {
-      padding: 5vh 0; } }
+.writingBox.connectBox .boxText {
+  padding: 0;
+  max-width: 220px;
+  margin: 5%; }
+  @media screen and (max-width: 768px) {
+    .writingBox.connectBox .boxText {
+      margin: 10% 2%; } }
+  .writingBox.connectBox .boxText .btn-text {
+    min-height: 120px;
+    border-color: #009ef1;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .writingBox.connectBox .boxText .btn-text span {
+      min-width: 122px;
+      padding: 0;
+      display: -ms-flexbox;
+      display: flex;
+      transform: translateX(-50%) translateY(-100%); }
+      .writingBox.connectBox .boxText .btn-text span img {
+        margin-right: 10px;
+        max-width: 100%;
+        height: auto; }
+  .writingBox.connectBox .boxText .btn {
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    min-width: 115px;
+    transform: translateX(-50%);
+    z-index: 2; }
 
 .voltaireCampaign .ViewTabs .nav {
   border: solid 1px #009ef1;
@@ -1389,3 +1495,88 @@ img ::-moz-selection {
       .voltaireCampaign .viewCampaign .view-row .viewContent .newsBox .newsTitle {
         font-size: 15px;
         color: #333333; }
+
+.modal-backdrop.show {
+  opacity: .75; }
+
+.modal .modal-dialog {
+  max-width: 1140px; }
+
+.modal .modal-dialog-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100% - (.5rem * 2)); }
+  @media (min-width: 576px) {
+    .modal .modal-dialog-centered .modal-dialog-centered {
+      min-height: calc(100% - (1.75rem * 2)); } }
+  .modal .modal-dialog-centered .modal-content {
+    width: 100%; }
+
+.modal .modal-content {
+  padding: 15px 0; }
+  .modal .modal-content .modal-header {
+    padding: 15px 30px;
+    border: 0; }
+    @media screen and (max-width: 768px) {
+      .modal .modal-content .modal-header {
+        padding: 15px; } }
+  .modal .modal-content .modal-body {
+    padding: 15px; }
+    .modal .modal-content .modal-body .form-row {
+      margin: 0 -15px; }
+      .modal .modal-content .modal-body .form-row .form-group {
+        padding: 0 30px;
+        margin-bottom: 2rem; }
+        @media screen and (max-width: 768px) {
+          .modal .modal-content .modal-body .form-row .form-group {
+            padding: 0 15px; } }
+        .modal .modal-content .modal-body .form-row .form-group .form-control {
+          border-color: #dadfe2;
+          border-width: .1rem;
+          font-size: .9rem;
+          color: #889099;
+          padding: 10px 15px;
+          min-height: calc(2.6rem + 2px); }
+        .modal .modal-content .modal-body .form-row .form-group .btn {
+          min-width: 150px;
+          cursor: pointer; }
+        @media screen and (max-width: 768px) {
+          .modal .modal-content .modal-body .form-row .form-group.form-action {
+            justify-content: center;
+            margin-bottom: 0; } }
+      .modal .modal-content .modal-body .form-row .form-control-file {
+        cursor: pointer;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        border: solid 0.1rem #dadfe2;
+        border-radius: 3px;
+        outline: none;
+        position: relative;
+        color: #889099;
+        font-size: 14px; }
+        .modal .modal-content .modal-body .form-row .form-control-file::before {
+          width: 100%;
+          height: 100%;
+          font-size: 16px;
+          line-height: 32px;
+          content: 'Upload here';
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          justify-content: center;
+          background-image: url("../img/icon/upload.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          color: #889099;
+          font-size: 18px;
+          line-height: 24rem; }
+        .modal .modal-content .modal-body .form-row .form-control-file::-webkit-file-upload-button {
+          visibility: hidden; }
