@@ -69,7 +69,6 @@
         .form-control-file {
           cursor: pointer;
           width: 100%;
-          height: 250px;
           display: flex;
           overflow: hidden;
           justify-content: center;
@@ -79,28 +78,243 @@
           position: relative;
           color: $form-control;
           font-size: 14px;
-          &::before {
-            width: 100%;
-            height: 100%;
-            font-size: 16px;
-            line-height: 32px;
-            content: 'Upload here';
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-image: url('../img/icon/upload.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            color: $form-control;
-            font-size: 18px;
-            line-height: 24rem;
-          }
           &::-webkit-file-upload-button {
             visibility: hidden;
           }
         }
+      }
+    }
+  }
+}
+.box-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: $gray-base;
+  transition: opacity .15s linear;
+  opacity: .75;
+}
+.voltairePopup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  .voltaireDialog {
+    max-width: 880px;
+    margin: 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - (.5rem * 2));
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    &.show {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    .voltaire-content {
+      width: 100%;
+      padding: 10px 0;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      pointer-events: auto;
+      background-color: $white;
+      background-clip: padding-box;
+      border-radius: .3rem;
+      outline: 0;
+    }
+    .voltaire-header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 15px 15px 20px;
+      border-bottom: 1px solid $white1;
+      border-top-left-radius: .3rem;
+      border-top-right-radius: .3rem;
+      flex-wrap: wrap;
+      h5 {
+        font-size: 22px;
+        margin-bottom: 5px;
+      }
+      .subTitle {
+        color: $voltaire;
+        font-size: 14px;
+      }
+    }
+    .voltaire-body {
+      position: relative;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 25px 15px;
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+      .prioritybox {
+        .boxStyle {
+          border: solid .1rem $white1;
+          border-radius: 5px;
+          padding: 10px;
+          align-items: center;
+          margin-bottom: 30px;
+          .iconImage {
+            max-width: 130px;
+            height: 100px;
+            position: relative;
+            box-shadow: 0 0 20px $voltaire-shadow;
+            border-radius: 5px;
+            &.hnBG {
+              background-image: url('../img/icon/hn.png');
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            &.dmBG {
+              background-image: url('../img/icon/dm.png');
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            &.bookBG {
+              background-image: url('../img/icon/book.png');
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            &.lunchBG {
+              background-image: url('../img/icon/lunch.png');
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            &.ticketBG {
+              background-image: url('../img/icon/tickets.png');
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            &.spaBG {
+              background-image: url('../img/icon/spa.png');
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            &.swagBG {
+              background-image: url('../img/icon/swag.png');
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            &.customBG {
+              background-image: url('../img/icon/custom.png');
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+            @media screen and (max-width: 460px) {
+              background-size: 60%;
+            }
+          }
+          .iconContent {
+            color: $gray;
+            font-size: 14px;
+            padding-left: 25px;
+            h2 {
+              color: $gray;
+              font-size: 18px;
+              font-weight: 600;
+            }
+            span {
+              color: $gray;
+              font-size: 14px;
+              font-weight: normal;
+            }
+          }
+          &:hover,
+          &:focus,
+          &.active {
+            border-color: $voltaire;
+            .iconImage {
+              &.hnBG {
+                background-image: url('../img/icon/hn-hover.png');
+              }
+              &.dmBG {
+                background-image: url('../img/icon/dm-hover.png');
+              }
+              &.bookBG {
+                background-image: url('../img/icon/book-hover.png');
+              }
+              &.lunchBG {
+                background-image: url('../img/icon/lunch-hover.png');
+              }
+              &.ticketBG {
+                background-image: url('../img/icon/tickets-hover.png');
+              }
+              &.spaBG {
+                background-image: url('../img/icon/spa-hover.png');
+              }
+              &.swagBG {
+                background-image: url('../img/icon/swag-hover.png');
+              }
+              &.customBG {
+                background-image: url('../img/icon/custom-hover.png');
+              }
+            }
+            .iconContent {
+              h2 {
+                color: $voltaire;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 768px) {
+          padding: 0;
+        }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      margin: 10px;
+    }
+  }
+  .close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    top: -20px;
+    background: url('../img/icon/close.png') no-repeat center center $white;
+    border-radius: 50%;
+    box-shadow: 0 0 15px $voltaire-shadow;
+    text-indent: -9999px;
+    z-index: 2;
+    opacity: 1;
+    &:hover,
+    &:focus {
+      background: url('../img/icon/close-hover.png') no-repeat center center $white;
+    }
+    @media screen and (max-width: 768px) {
+      right: 10px;
+      top: 10px;
+    }
+  }
+  &.priorityPopup {
+    .voltaireDialog {
+      max-width: 1050px;
+      .voltaire-header {
+        padding-top: 25px;
       }
     }
   }

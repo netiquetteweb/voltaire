@@ -189,36 +189,23 @@
         display: -ms-flexbox;
         display: flex;
         justify-content: center;
+        align-items: center;
         border-left: solid 1px $white1;
         box-shadow: 0 0 10px $voltaire-shadow;
-        a {
-          color: $gray-base;
-          img {
-            box-shadow: 0 0 10px $voltaire-shadow;
-            border-radius: 50%;
-            @media screen and (max-width: 768px) {
-              max-width: 40px;
-              margin-right: 8px;
-            }
+        color: $gray-base;
+        img {
+          box-shadow: 0 0 10px $voltaire-shadow;
+          border-radius: 50%;
+          @media screen and (max-width: 768px) {
+            max-width: 40px;
+            margin-right: 8px;
           }
-          .avatarName {
-            padding: 0 10px !important;
-            color: $gray-base !important;
-            @media screen and (max-width: 768px) {
-              display: none;
-            }
-          }
-          &::after {
-            content: '';
-            display: inline-flex;
-            width: 0;
-            height: 0;
-            border-left: 6px solid transparent;
-            border-right: 6px solid transparent;
-            border-top: 6px solid $gray-base6;
-          }
-          &:hover {
-            color: $voltaire;
+        }
+        .avatarName {
+          padding: 0 10px !important;
+          color: $gray-base !important;
+          @media screen and (max-width: 768px) {
+            display: none;
           }
         }
       }
