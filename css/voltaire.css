@@ -225,7 +225,8 @@ img ::-moz-selection {
   transform: translateX(0); }
   @media screen and (min-width: 992px) {
     .mainContent {
-      padding: 140px 15px 15px 330px; } }
+      padding: 140px 15px 15px 330px;
+      min-height: 100vh; } }
   @media screen and (max-width: 992px) {
     .mainContent {
       padding: 140px 0 15px; } }
@@ -652,7 +653,7 @@ img ::-moz-selection {
     min-width: 10px;
     height: 50px;
     display: flex;
-    padding: 0 50px;
+    padding: 0 40px;
     margin: 0 -2px;
     justify-content: center;
     line-height: 50px;
@@ -784,6 +785,264 @@ img ::-moz-selection {
       margin-bottom: .9rem;
       font-size: 14px;
       color: #192940; }
+
+.emailview {
+  background-color: #fff;
+  border: solid 0.1rem #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  height: calc(100vh - 250px);
+  overflow-y: auto;
+  overflow-x: hidden; }
+  @media screen and (max-width: 768px) {
+    .emailview {
+      height: auto; } }
+  .emailview .table {
+    margin: 0; }
+    .emailview .table tr {
+      background-color: #fff;
+      transition: .3s color ease-in-out; }
+      .emailview .table tr td {
+        border-bottom: solid 0.05rem #f1f1f1;
+        font-size: 14px;
+        position: relative;
+        padding: .95rem .75rem;
+        color: #333333; }
+        .emailview .table tr td .boxround {
+          border: solid 0.1rem #f1f1f1;
+          border-radius: 5px;
+          background-color: #fff;
+          width: 23px;
+          height: 23px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+        .emailview .table tr td.title {
+          font-weight: bold; }
+        .emailview .table tr td.description {
+          font-weight: bold; }
+          .emailview .table tr td.description span {
+            font-weight: 400;
+            color: #555555; }
+          @media screen and (max-width: 768px) {
+            .emailview .table tr td.description {
+              display: none; } }
+        .emailview .table tr td.dropdown {
+          text-align: center;
+          color: #bfc5d1; }
+          .emailview .table tr td.dropdown button {
+            border: 0;
+            background: none;
+            padding: 0;
+            color: #bfc5d1; }
+        .emailview .table tr td:first-child::before {
+          content: '';
+          background-color: #fff;
+          width: 3px;
+          height: 70%;
+          position: absolute;
+          left: 0;
+          top: 15%; }
+      .emailview .table tr:hover, .emailview .table tr:focus, .emailview .table tr.active {
+        background-color: #009ef1;
+        cursor: pointer; }
+        .emailview .table tr:hover td, .emailview .table tr:focus td, .emailview .table tr.active td {
+          color: #fff;
+          border-bottom: solid 0.05rem #009ef1; }
+          .emailview .table tr:hover td button, .emailview .table tr:focus td button, .emailview .table tr.active td button {
+            color: #fff; }
+          .emailview .table tr:hover td.description span, .emailview .table tr:focus td.description span, .emailview .table tr.active td.description span {
+            color: #fff; }
+      .emailview .table tr:last-child td {
+        border: 0; }
+
+@media screen and (max-width: 768px) {
+  .email-reply .pageTitle {
+    margin: 5px 0 10px;
+    padding: 0; } }
+
+.taskWeek {
+  position: relative;
+  padding: 0 15px;
+  min-width: 150px;
+  text-align: center;
+  color: #009ef1;
+  font-weight: bold; }
+  .taskWeek .control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #303f55; }
+    .taskWeek .control.next {
+      left: auto;
+      right: 0; }
+    .taskWeek .control:hover, .taskWeek .control:focus {
+      color: #009ef1; }
+
+.addTask .btn-plus {
+  justify-content: left;
+  position: relative;
+  padding-left: 25px;
+  padding-right: 65px;
+  color: #009ef1; }
+  .addTask .btn-plus::after {
+    content: '+';
+    background-color: #009ef1;
+    box-shadow: 0 0 20px rgba(0, 158, 241, 0.13);
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    right: -2px;
+    text-align: center;
+    line-height: 47px;
+    color: #fff;
+    font-size: 37px; }
+  .addTask .btn-plus:hover, .addTask .btn-plus:focus {
+    background-color: #009ef1 !important;
+    border-color: #009ef1 !important;
+    color: #fff; }
+
+@media screen and (max-width: 768px) {
+  .addTask {
+    margin-top: 15px; } }
+
+.viewTask .view-row {
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  border: solid 0.1rem #f1f1f1;
+  background-color: #fff;
+  padding: 1.8rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  transition: .3s color ease-in-out; }
+  .viewTask .view-row .view-title {
+    position: relative;
+    padding-left: 50px;
+    color: #009ef1;
+    font-weight: bold; }
+    .viewTask .view-row .view-title::before {
+      content: '';
+      border: solid 0.1rem #f1f1f1;
+      border-radius: 5px;
+      background-color: #fff;
+      width: 23px;
+      height: 23px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      position: absolute;
+      left: 12px;
+      top: 0; }
+  @media screen and (max-width: 768px) {
+    .viewTask .view-row .view-data {
+      padding-left: 50px; } }
+  .viewTask .view-row:hover .view-title::before, .viewTask .view-row:focus .view-title::before, .viewTask .view-row.active .view-title::before {
+    content: '';
+    background-image: url("../img/icon/iconcheck.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    border: solid 0.1rem #009ef1;
+    color: #009ef1;
+    justify-content: center; }
+
+.calendar {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  padding-bottom: 15px; }
+  .calendar .calendarTop {
+    background-color: #009ef1;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    text-align: center; }
+    .calendar .calendarTop .control {
+      position: absolute;
+      left: 1.8rem;
+      top: 1rem;
+      color: #fff;
+      outline: none;
+      font-size: 14px;
+      font-weight: bold;
+      width: 25px;
+      height: 25px;
+      line-height: 23px;
+      border: solid .1rem transparent;
+      border-radius: 50%; }
+      .calendar .calendarTop .control.next {
+        left: auto;
+        right: 1.8rem; }
+      .calendar .calendarTop .control:hover, .calendar .calendarTop .control:focus {
+        border-color: #fff; }
+  .calendar table {
+    margin: 0; }
+    .calendar table tr th {
+      text-align: center;
+      font-size: 14px !important;
+      color: #009ef1;
+      padding: 1.2rem .55rem .5rem; }
+    .calendar table tr td {
+      text-align: center;
+      font-size: 14px;
+      color: #555555;
+      padding: .75rem .55rem; }
+      .calendar table tr td .number {
+        width: 30px;
+        height: 30px;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #555555; }
+        .calendar table tr td .number.today {
+          background-color: #009ef1;
+          border-radius: 50%;
+          color: #fff; }
+        .calendar table tr td .number.current {
+          background-color: #009ef1;
+          border-radius: 50%;
+          color: #fff; }
+        .calendar table tr td .number.nextOne {
+          background-color: #ff8d38;
+          border-radius: 50%;
+          color: #fff; }
+        .calendar table tr td .number.nextTwo {
+          background-color: #03d967;
+          border-radius: 50%;
+          color: #fff; }
+        .calendar table tr td .number.nextThree {
+          background-color: #ff3d3d;
+          border-radius: 50%;
+          color: #fff; }
+        .calendar table tr td .number.nextFour {
+          background-color: #c636f8;
+          border-radius: 50%;
+          color: #fff; }
+
+.meetingview {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  border-radius: 5px;
+  border: solid 0.1rem #f1f1f1;
+  padding: 2.5rem; }
+
+.meetinglist {
+  padding-top: 25px; }
+  .meetinglist .view-row {
+    box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+    border: solid 0.1rem #f1f1f1;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: .3s color ease-in-out; }
+    .meetinglist .view-row .btn {
+      min-width: 150px; }
 
 .adminSidebar {
   position: fixed;
