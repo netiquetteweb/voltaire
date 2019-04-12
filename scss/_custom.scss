@@ -524,6 +524,7 @@
           justify-content: center;
           align-items: center;
           color: $gray;
+          margin: 0 auto;
           &.today {
             background-color: $voltaire;
             border-radius: 50%;
@@ -565,9 +566,13 @@
   border-radius: 5px;
   border: solid .1rem $white1;
   padding: 2.5rem;
+  padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    padding: 15px;
+  }
 }
 .meetinglist {
-  padding-top: 25px;
+  padding-top: 1.5rem;
   .view-row {
     box-shadow: 0 0 15px $voltaire-shadow;
     border: solid .1rem $white1;
@@ -577,8 +582,107 @@
     margin-bottom: 20px;
     font-size: 14px;
     transition: .3s color ease-in-out;
+    .avtarImage {
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      .avtarLabel {
+        width: 57px;
+        height: 57px;
+        border-radius: 50%;
+        margin-right: 15px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 57px;
+        img {
+          border-radius: 50%;
+          max-width: 57px;
+          max-height: 57px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        margin-bottom: 1.5rem;
+      }
+    }
     .btn {
       min-width: 150px;
     }
+  }
+}
+.meeting-item {
+  margin: 0 -2.5rem;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 39vh;
+    overflow-y: auto;
+    li {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      position: relative;
+      align-items: center;
+      padding: 15px 0 15px 6.5rem;
+      border-bottom: solid 1px $white1;
+      @media screen and (max-width: 768px) {
+        padding: 15px 0 15px 3.9rem;
+      }
+      .meetingdate {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        text-align: center;
+        line-height: 48px;
+        position: absolute;
+        font-size: 16px;
+        left: 2.5rem;
+        top: 12px;
+        @media screen and (max-width: 768px) {
+          left: 0;
+        }
+      }
+      .meetingDetails {
+        font-size: 15px;
+        color: $voltaire6;
+        font-weight: bold;
+        padding-right: 15px;
+        .time {
+          display: -ms-flexbox;
+          display: flex;
+          min-width: 100%;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: $gray-base10;
+        }
+      }
+      ul {
+        margin-top: 15px;
+        height: auto;
+        li {
+          padding-left: 0;
+          border-top: solid 1px $white1;
+          border-bottom: 0;
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+.todayMeetings {
+  .pageHeading {
+    min-height: 51px;
   }
 }

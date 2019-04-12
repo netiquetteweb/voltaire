@@ -358,15 +358,22 @@ img {
 }
 .bgBlue {
   background-color: $voltaire;
+  color: $white;
 }
 .textBlue {
   color: $voltaire;
 }
 .bgGreen {
   background-color: $voltairegreen;
+  color: $white;
+}
+.bgPurple {
+  background-color: $voltairepurple;
+  color: $white;
 }
 .bgOrange {
   background-color: $voltaireorange;
+  color: $white;
 }
 .voltaire-shadow-outset {
   box-shadow: 0 0 15px $voltaire-shadow;

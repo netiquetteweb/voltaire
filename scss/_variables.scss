@@ -22,6 +22,7 @@ $gray-base6:             #bfc5d1 !default;
 $gray-base7:             #bcbcbc !default;
 $gray-base8:             #ababab !default;
 $gray-base9:             #363636 !default;
+$gray-base10:             #6d7a94 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%)   !default; // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
@@ -45,7 +46,7 @@ $voltaire-opcity:        rgba(0, 158, 241, .13) !default;
 
 // Nav Hover Color Scheme
 $voltairegreen:               #03d967 !default;
-$voltaireorange:              #ff8d38 !default;
+$voltaireorange:              #ffb95a !default;
 $voltairered:                 #ff3d3d !default;
 $voltairepurple:              #c636f8 !default;
 
