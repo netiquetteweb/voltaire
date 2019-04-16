@@ -592,6 +592,45 @@ img ::-moz-selection {
     .checkbox input:disabled + .checkbox-label::after {
       opacity: 1; }
 
+.autocomplete {
+  padding: .575rem .75rem;
+  font-size: 14px; }
+  .autocomplete:focus {
+    box-shadow: 0 0 5px rgba(0, 158, 241, 0.0784314);
+    border-color: #f1f1f1; }
+
+.xdsoft_autocomplete .xdsoft_autocomplete_dropdown {
+  position: relative;
+  top: -.1rem !important;
+  border: solid 0.1rem #f1f1f1;
+  border-top: 0;
+  box-shadow: 0 0 5px rgba(0, 158, 241, 0.0784314);
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  color: #555555;
+  font-size: 14px; }
+  .xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div {
+    padding: 8px 15px !important; }
+    .xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div.active {
+      background-color: #f1f1f1;
+      color: #555555; }
+
+.formSearchview .xdsoft_autocomplete .xdsoft_autocomplete_dropdown {
+  position: absolute;
+  top: 2.6rem !important;
+  border: solid 0.1rem #f1f1f1;
+  border-top: 0;
+  box-shadow: 0 0 5px rgba(0, 158, 241, 0.0784314);
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  color: #555555;
+  font-size: 14px; }
+  .formSearchview .xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div {
+    padding: 8px 15px !important; }
+    .formSearchview .xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div.active {
+      background-color: #f1f1f1;
+      color: #555555; }
+
 .contactsearch {
   position: relative; }
   .contactsearch .form-control {
@@ -1140,6 +1179,44 @@ img ::-moz-selection {
 
 .todayMeetings .pageHeading {
   min-height: 51px; }
+
+.formSearchview .radioButton {
+  width: 20%;
+  margin: 0 !important;
+  padding: 8px; }
+  .formSearchview .radioButton .radio-label {
+    width: 100%;
+    min-height: 120px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    margin: 0; }
+    .formSearchview .radioButton .radio-label span {
+      min-width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center; }
+    .formSearchview .radioButton .radio-label::before {
+      border-color: #bfc5d1; }
+  @media screen and (max-width: 992px) {
+    .formSearchview .radioButton {
+      width: 25%; } }
+  @media screen and (max-width: 768px) {
+    .formSearchview .radioButton {
+      width: 33.3333%; } }
+  @media screen and (max-width: 420px) {
+    .formSearchview .radioButton {
+      width: 50%; } }
+
+.formSearchview .form-control {
+  border-color: #bfc5d1; }
+  .formSearchview .form-control:focus {
+    border-color: #f1f1f1; }
 
 .adminSidebar {
   position: fixed;

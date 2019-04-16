@@ -686,3 +686,47 @@
     min-height: 51px;
   }
 }
+.formSearchview {
+  .radioButton {
+    width: 20%;
+    margin: 0 !important;
+    padding: 8px;
+    .radio-label {
+      width: 100%;
+      min-height: 120px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      font-size: 15px;
+      margin: 0;
+      span {
+        min-width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+      }
+      &::before {
+        border-color: $gray-base6;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      width: 25%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 33.3333%;
+    }
+    @media screen and (max-width: 420px) {
+      width: 50%;
+    }
+  }
+  .form-control {
+    border-color: $gray-base6;
+    &:focus {
+      border-color: $white1;
+    }
+  }
+}

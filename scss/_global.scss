@@ -810,3 +810,53 @@ img {
     }
   }
 }
+.autocomplete {
+  padding: .575rem .75rem;
+  font-size: 14px;
+  &:focus {
+    box-shadow: 0 0 5px $voltaire-shadow;
+    border-color: $white1;
+  }
+}
+.xdsoft_autocomplete {
+  .xdsoft_autocomplete_dropdown {
+    position: relative;
+    top: -.1rem !important;
+    border: solid .1rem $white1;
+    border-top: 0;
+    box-shadow: 0 0 5px $voltaire-shadow;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    color: $gray;
+    font-size: 14px;
+    &>div {
+      padding: 8px 15px !important;
+      &.active {
+        background-color: $white1;
+        color: $gray;
+      }
+    }
+  }
+}
+.formSearchview {
+  .xdsoft_autocomplete {
+    .xdsoft_autocomplete_dropdown {
+      position: absolute;
+      top: 2.6rem !important;
+      border: solid .1rem $white1;
+      border-top: 0;
+      box-shadow: 0 0 5px $voltaire-shadow;
+      border-bottom-left-radius: .25rem;
+      border-bottom-right-radius: .25rem;
+      color: $gray;
+      font-size: 14px;
+      &>div {
+        padding: 8px 15px !important;
+        &.active {
+          background-color: $white1;
+          color: $gray;
+        }
+      }
+    }
+  }
+}
