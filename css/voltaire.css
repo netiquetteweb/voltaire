@@ -266,6 +266,10 @@ img ::-moz-selection {
   background-color: #ffb95a;
   color: #fff; }
 
+.bgRed {
+  background-color: #ff3d3d;
+  color: #fff; }
+
 .voltaire-shadow-outset {
   box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314); }
 
@@ -631,6 +635,12 @@ img ::-moz-selection {
       background-color: #f1f1f1;
       color: #555555; }
 
+.progress {
+  height: 8px;
+  background-color: #f4f6fc; }
+  .progress .progress-bar {
+    background-color: #009ef1; }
+
 .contactsearch {
   position: relative; }
   .contactsearch .form-control {
@@ -723,6 +733,20 @@ img ::-moz-selection {
           display: block; }
         .viewFilter .rightView .tabs.select li:focus {
           display: block; } }
+
+@media screen and (min-width: 768px) {
+  .viewFilter .rightView.dashtab .tabs li:first-child a {
+    border-radius: 35px 0 0 35px;
+    line-height: 48px;
+    height: 48px; }
+  .viewFilter .rightView.dashtab .tabs li:nth-child(2) a, .viewFilter .rightView.dashtab .tabs li:nth-child(3) a, .viewFilter .rightView.dashtab .tabs li:nth-child(4) a, .viewFilter .rightView.dashtab .tabs li:nth-child(5) a, .viewFilter .rightView.dashtab .tabs li:nth-child(6) a {
+    border-radius: 0;
+    line-height: 48px;
+    height: 48px; }
+  .viewFilter .rightView.dashtab .tabs li:last-child a {
+    border-radius: 0 35px 35px 0;
+    line-height: 48px;
+    height: 48px; } }
 
 .feedbackUser .headTop {
   align-items: center;
@@ -2423,3 +2447,481 @@ img ::-moz-selection {
     max-width: 1050px; }
     .voltairePopup.priorityPopup .voltaireDialog .voltaire-header {
       padding-top: 25px; }
+
+.voltaireHead .voltaireDate .current {
+  font-size: 14px;
+  color: #838b9a; }
+
+.voltaireHead .voltaireDate .title {
+  font-size: 1.2rem;
+  margin: 0;
+  padding-top: 4px;
+  color: #00152d; }
+
+.voltaireCounter .card {
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 0.1rem #f1f1f1;
+  box-shadow: 0 0 10px rgba(0, 158, 241, 0.0784314); }
+  .voltaireCounter .card .card-body {
+    color: #00152d; }
+    .voltaireCounter .card .card-body .round {
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+      border-style: solid;
+      border-width: 1px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-right: 12px; }
+      .voltaireCounter .card .card-body .round.green {
+        border-color: #03d967; }
+      .voltaireCounter .card .card-body .round.purple {
+        border-color: #c636f8; }
+      .voltaireCounter .card .card-body .round.orange {
+        border-color: #ffb95a; }
+      .voltaireCounter .card .card-body .round.blue {
+        border-color: #009ef1; }
+      .voltaireCounter .card .card-body .round.red {
+        border-color: #ff3d3d; }
+    .voltaireCounter .card .card-body h5 {
+      font-size: 1.4rem;
+      color: #00152d; }
+
+.voltaireBody h2.title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem; }
+
+.voltaireBody .feedbox {
+  border-radius: 5px;
+  border: solid 0.1rem #f1f1f1;
+  overflow-y: auto;
+  height: calc(69vh - 1px); }
+  .voltaireBody .feedbox .card {
+    border: 0;
+    box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+    border-radius: 5px; }
+    .voltaireBody .feedbox .card .card-body {
+      font-size: 14px;
+      font-weight: 300;
+      color: #0d1533;
+      padding-bottom: 0; }
+      .voltaireBody .feedbox .card .card-body .dTime {
+        color: #bfc5d1;
+        font-size: 13px; }
+      .voltaireBody .feedbox .card .card-body .thumb {
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+        text-align: center;
+        line-height: 55px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #fff;
+        box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314); }
+        .voltaireBody .feedbox .card .card-body .thumb img {
+          width: 55px;
+          height: 55px; }
+        .voltaireBody .feedbox .card .card-body .thumb.green {
+          background-color: #03d967; }
+        .voltaireBody .feedbox .card .card-body .thumb.orange {
+          background-color: #ffb95a; }
+      .voltaireBody .feedbox .card .card-body .name {
+        font-size: 14px;
+        font-weight: 400; }
+      .voltaireBody .feedbox .card .card-body .iconControl {
+        margin: 0 -1.25rem;
+        position: relative;
+        margin-top: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: solid 0.1rem #f1f1f1; }
+        @media screen and (max-width: 768px) {
+          .voltaireBody .feedbox .card .card-body .iconControl .nav li {
+            max-width: 33.3333%;
+            width: 33.3333%;
+            flex: 0 0 33.3333%;
+            margin-bottom: 15px; } }
+        .voltaireBody .feedbox .card .card-body .iconControl .nav li a {
+          text-indent: -9999px;
+          width: 30px;
+          min-height: 25px;
+          display: -ms-flexbox;
+          display: flex; }
+          .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconfacebook {
+            background-image: url("../img/contactInsights/iconfacebook.png");
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: left center; }
+            .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconfacebook:hover, .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconfacebook:focus {
+              background-image: url("../img/contactInsights/iconfacebookhover.png"); }
+          .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconcalendar {
+            background-image: url("../img/contactInsights/iconcal.png");
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto; }
+            .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconcalendar:hover, .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconcalendar:focus {
+              background-image: url("../img/contactInsights/iconcalhover.png"); }
+          .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconeye {
+            background-image: url("../img/contactInsights/iconeye.png");
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto; }
+            .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconeye:hover, .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconeye:focus {
+              background-image: url("../img/contactInsights/iconeyehover.png"); }
+          .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconmail {
+            background-image: url("../img/contactInsights/iconmail.png");
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto; }
+            .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconmail:hover, .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconmail:focus {
+              background-image: url("../img/contactInsights/iconmailhover.png"); }
+          .voltaireBody .feedbox .card .card-body .iconControl .nav li a.icongifts {
+            background-image: url("../img/contactInsights/icongift.png");
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto; }
+            .voltaireBody .feedbox .card .card-body .iconControl .nav li a.icongifts:hover, .voltaireBody .feedbox .card .card-body .iconControl .nav li a.icongifts:focus {
+              background-image: url("../img/contactInsights/icongifthover.png"); }
+          .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconsetting {
+            background-image: url("../img/contactInsights/iconsetting.png");
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: auto; }
+            .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconsetting:hover, .voltaireBody .feedbox .card .card-body .iconControl .nav li a.iconsetting:focus {
+              background-image: url("../img/contactInsights/iconsettinghover.png"); }
+          @media screen and (max-width: 768px) {
+            .voltaireBody .feedbox .card .card-body .iconControl .nav li a {
+              margin: 0 auto; } }
+
+.voltaireBody .taskbox .taskstatus {
+  background-color: #f4f6fc;
+  border-radius: 3px; }
+  .voltaireBody .taskbox .taskstatus li {
+    padding: 4px 15px 4px 35px;
+    color: #949cab;
+    font-size: 14px;
+    position: relative; }
+    .voltaireBody .taskbox .taskstatus li::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      position: absolute;
+      left: 15px;
+      top: 10px; }
+    .voltaireBody .taskbox .taskstatus li.closed::before {
+      background-color: #ffb95a; }
+    .voltaireBody .taskbox .taskstatus li.active::before {
+      background-color: #009ef1; }
+
+.voltaireBody .taskbox .taskContent {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  overflow-y: auto;
+  height: calc(69vh - 1px); }
+  .voltaireBody .taskbox .taskContent .card {
+    border: 0;
+    background-color: transparent;
+    border-radius: 0; }
+    .voltaireBody .taskbox .taskContent .card .card-body {
+      padding: 15px 0;
+      border-bottom: solid 1px #f1f1f1; }
+      .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap {
+        padding: 0 15px; }
+        .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .thumb {
+          width: 55px;
+          height: 55px;
+          border-radius: 55px;
+          text-align: center;
+          line-height: 55px;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #fff;
+          box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314); }
+          .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .thumb img {
+            width: 55px;
+            height: 55px; }
+          .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .thumb.green {
+            background-color: #03d967; }
+          .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .thumb.orange {
+            background-color: #ffb95a; }
+        .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .name {
+          font-size: 14px;
+          font-weight: 400; }
+        .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .dTime {
+          color: #bfc5d1;
+          font-size: 13px;
+          position: relative; }
+          .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .dTime .round {
+            position: relative;
+            padding-left: 20px; }
+            .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .dTime .round::before {
+              content: '';
+              width: 10px;
+              height: 10px;
+              border-radius: 10px;
+              position: absolute;
+              left: 0;
+              top: 5px; }
+            .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .dTime .round.closed::before {
+              background-color: #ffb95a; }
+            .voltaireBody .taskbox .taskContent .card .card-body .flex-wrap .dTime .round.active::before {
+              background-color: #009ef1; }
+      .voltaireBody .taskbox .taskContent .card .card-body .content {
+        padding: 15px 15px 0;
+        font-size: 14px;
+        color: #0d1533;
+        font-weight: 300; }
+        .voltaireBody .taskbox .taskContent .card .card-body .content p {
+          margin: 0;
+          font-size: 14px; }
+
+.voltaireBody .meetingbox .cardmeeting {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314); }
+  .voltaireBody .meetingbox .cardmeeting .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    height: calc(69vh - 100px); }
+    .voltaireBody .meetingbox .cardmeeting .list li {
+      border-bottom: solid 1px #f1f1f1;
+      padding: 15px 20px; }
+      .voltaireBody .meetingbox .cardmeeting .list li .time {
+        color: #6d7a94;
+        font-size: 13px;
+        font-weight: 600; }
+      .voltaireBody .meetingbox .cardmeeting .list li .title {
+        color: #0d1533;
+        font-weight: 600;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        line-height: normal; }
+      .voltaireBody .meetingbox .cardmeeting .list li .schedule .user {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: #c5c7d7;
+        border: solid 4px #fff;
+        box-shadow: 0 0 10px rgba(0, 158, 241, 0.0784314); }
+        .voltaireBody .meetingbox .cardmeeting .list li .schedule .user img {
+          min-width: 100%;
+          max-width: 100%;
+          border-radius: 50%; }
+        .voltaireBody .meetingbox .cardmeeting .list li .schedule .user.group {
+          margin-left: -12px; }
+        .voltaireBody .meetingbox .cardmeeting .list li .schedule .user.plus {
+          margin-left: -12px; }
+          .voltaireBody .meetingbox .cardmeeting .list li .schedule .user.plus a {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 30px; }
+          .voltaireBody .meetingbox .cardmeeting .list li .schedule .user.plus:hover, .voltaireBody .meetingbox .cardmeeting .list li .schedule .user.plus:focus {
+            background-color: #009ef1; }
+      .voltaireBody .meetingbox .cardmeeting .list li:last-child {
+        border: 0; }
+  .voltaireBody .meetingbox .cardmeeting .action {
+    border-top: solid 1px #f1f1f1; }
+
+.voltaireBody .angaged {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  overflow-y: auto;
+  height: calc(62vh - 50px); }
+  .voltaireBody .angaged .viewlist {
+    padding: 15px;
+    border-bottom: solid 1px #f1f1f1; }
+    .voltaireBody .angaged .viewlist .thumb {
+      width: 55px;
+      height: 55px;
+      border-radius: 55px;
+      text-align: center;
+      line-height: 55px;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #fff;
+      box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+      margin-right: 15px; }
+      .voltaireBody .angaged .viewlist .thumb img {
+        width: 55px;
+        height: 55px; }
+      .voltaireBody .angaged .viewlist .thumb.green {
+        background-color: #03d967; }
+      .voltaireBody .angaged .viewlist .thumb.orange {
+        background-color: #ffb95a; }
+      .voltaireBody .angaged .viewlist .thumb.purple {
+        background-color: #c636f8; }
+      .voltaireBody .angaged .viewlist .thumb.red {
+        background-color: #ff3d3d; }
+  .voltaireBody .angaged .email {
+    padding: 7px 0;
+    font-size: 14px;
+    color: #0d1533; }
+  .voltaireBody .angaged .ProBar {
+    position: relative;
+    padding-right: 45px; }
+    .voltaireBody .angaged .ProBar .value {
+      position: absolute;
+      right: 0;
+      top: -.3rem;
+      color: #bfc5d1;
+      font-weight: bold;
+      font-size: 13px; }
+
+.chartCode .card {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  min-height: calc(62vh - 50px);
+  border: 0;
+  border-radius: 0; }
+
+.chartCode .pieChart .chartview {
+  text-align: center;
+  position: relative;
+  max-width: 258px;
+  margin: 0 auto; }
+  .chartCode .pieChart .chartview .statusBar {
+    position: absolute;
+    top: 75px;
+    left: -190px;
+    min-width: 180px;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #fff;
+    border: solid 0.1rem #009ef1;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    opacity: 0; }
+    .chartCode .pieChart .chartview .statusBar li {
+      padding-bottom: 5px; }
+      .chartCode .pieChart .chartview .statusBar li:last-child {
+        padding: 0; }
+      .chartCode .pieChart .chartview .statusBar li .count {
+        color: #009ef1;
+        font-weight: bold; }
+    .chartCode .pieChart .chartview .statusBar::before {
+      position: absolute;
+      right: -12px;
+      top: -.08rem;
+      content: '';
+      background: url("../img/dashboard/bordercurav.png") no-repeat 0 0;
+      width: 12px;
+      height: 13px; }
+  .chartCode .pieChart .chartview img {
+    max-width: 100%;
+    height: auto; }
+  .chartCode .pieChart .chartview:hover .statusBar {
+    opacity: 1; }
+
+.chartCode .pieChart .pieDetails {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .chartCode .pieChart .pieDetails li {
+    color: #555555;
+    font-size: 14px;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px; }
+    .chartCode .pieChart .pieDetails li::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #009ef1;
+      border: solid 3px #f1f1f1;
+      border-radius: 16px;
+      z-index: 2; }
+    .chartCode .pieChart .pieDetails li.roundgreen::before {
+      background-color: #03d967;
+      border-color: #e5fbf0; }
+    .chartCode .pieChart .pieDetails li.roundred::before {
+      background-color: #ff3d3d;
+      border-color: #ffebec; }
+    .chartCode .pieChart .pieDetails li.roundorange::before {
+      background-color: #ffb95a;
+      border-color: #fff5e9; }
+    .chartCode .pieChart .pieDetails li.roundblue::before {
+      background-color: #009ef1;
+      border-color: #e5f5fe; }
+    .chartCode .pieChart .pieDetails li.roundpurple::before {
+      background-color: #c636f8;
+      border-color: #f9ebfe; }
+
+.voltaireTusers {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  border: solid 0.1rem #f1f1f1;
+  border-radius: 5px; }
+  .voltaireTusers .navTop .nav {
+    border-bottom: solid 0.1rem #f1f1f1; }
+    .voltaireTusers .navTop .nav li {
+      padding: 0; }
+      .voltaireTusers .navTop .nav li a {
+        color: #bcbcbc;
+        font-size: 14px;
+        padding: 15px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .voltaireTusers .navTop .nav li a:hover, .voltaireTusers .navTop .nav li a:focus {
+          color: #009ef1; }
+  .voltaireTusers .result {
+    position: relative;
+    padding-top: 18vh; }
+    .voltaireTusers .result img {
+      min-width: 100%;
+      max-width: 100%;
+      height: auto; }
+    .voltaireTusers .result .counts {
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 600; }
+      .voltaireTusers .result .counts span {
+        font-size: 13px;
+        color: #bcbcbc; }
+    .voltaireTusers .result .startDate {
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+      color: #555555;
+      font-size: 14px;
+      font-weight: 600; }
+    .voltaireTusers .result .endDate {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      color: #555555;
+      font-size: 14px;
+      font-weight: 600; }

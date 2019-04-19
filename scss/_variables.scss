@@ -11,6 +11,7 @@ $white:                  #fff !default;
 $white1:                 #f1f1f1 !default;
 $white2:                 #fdfdfd !default;
 $white3:                 #f0faff !default;
+$white4:                 #f4f6fc !default;
 $gray-alt:               #dadfe2 !default;
 $gray-base:              #000 !default;
 $gray-base1:             #aaa !default;
@@ -22,7 +23,9 @@ $gray-base6:             #bfc5d1 !default;
 $gray-base7:             #bcbcbc !default;
 $gray-base8:             #ababab !default;
 $gray-base9:             #363636 !default;
-$gray-base10:             #6d7a94 !default;
+$gray-base10:            #6d7a94 !default;
+$gray-base11:            #838b9a !default;
+$gray-base12:            #c5c7d7 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%)   !default; // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
@@ -40,15 +43,23 @@ $voltaire4:              #43beff !default;
 $voltaire5:              #d9f1fd !default;
 $voltaire6:              #0d1533 !default;
 $voltaire7:              #303f55 !default;
+$voltaire8:              #949cab !default;
 $voltaire-text:          #8da9b7 !default;
 $voltaire-shadow:        rgba(0, 158, 241, .0784313725490196) !default;
 $voltaire-opcity:        rgba(0, 158, 241, .13) !default;
 
 // Nav Hover Color Scheme
-$voltairegreen:               #03d967 !default;
-$voltaireorange:              #ffb95a !default;
-$voltairered:                 #ff3d3d !default;
-$voltairepurple:              #c636f8 !default;
+$voltairegreen:          #03d967 !default;
+$voltaireorange:         #ffb95a !default;
+$voltairered:            #ff3d3d !default;
+$voltairepurple:         #c636f8 !default;
+
+// Nav Hover Color Scheme
+$voltaireblue-light:     #e5f5fe !default;
+$voltairegreen-light:    #e5fbf0 !default;
+$voltaireorange-light:   #fff5e9 !default;
+$voltairered-light:      #ffebec !default;
+$voltairepurple-light:   #f9ebfe !default;
 
 // form
 $form-control:               #889099 !default;

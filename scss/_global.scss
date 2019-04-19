@@ -375,6 +375,10 @@ img {
   background-color: $voltaireorange;
   color: $white;
 }
+.bgRed {
+  background-color: $voltairered;
+  color: $white;
+}
 .voltaire-shadow-outset {
   box-shadow: 0 0 15px $voltaire-shadow;
 }
@@ -858,5 +862,12 @@ img {
         }
       }
     }
+  }
+}
+.progress {
+  height: 8px;
+  background-color: $white4;
+  .progress-bar {
+    background-color: $voltaire;
   }
 }

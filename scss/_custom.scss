@@ -122,6 +122,39 @@
         }
       }
     }
+    @media screen and (min-width: 768px) {
+      &.dashtab {
+        .tabs {
+          li {
+            &:first-child {
+              a {
+                border-radius: 35px 0 0 35px;
+                line-height: 48px;
+                height: 48px;
+              }
+            }
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+              a {
+                border-radius: 0;
+                line-height: 48px;
+                height: 48px;
+              }
+            }
+            &:last-child {
+              a {
+                border-radius: 0 35px 35px 0;
+                line-height: 48px;
+                height: 48px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 .feedbackUser {
