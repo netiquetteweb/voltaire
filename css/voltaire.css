@@ -202,6 +202,15 @@ textarea {
   .form-control:focus {
     box-shadow: none; }
 
+.form-control-number {
+  width: 60px;
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: solid 1px #009ef1;
+  color: #009ef1;
+  outline: none;
+  margin-top: 3px; }
+
 ::-moz-selection {
   background: #009ef1;
   color: #fff;
@@ -506,7 +515,10 @@ img ::-moz-selection {
       cursor: pointer;
       position: relative;
       color: #889099;
-      font-size: 14px; }
+      font-size: 14px;
+      padding-left: 28px;
+      min-height: 20px;
+      line-height: 20px; }
       .radio input + .radio-label::before {
         content: '';
         border: solid 0.1rem #f1f1f1;
@@ -514,7 +526,7 @@ img ::-moz-selection {
         display: inline-block;
         width: 20px;
         height: 20px;
-        position: relative;
+        position: absolute;
         top: 0;
         left: 0;
         margin-right: .7em;
@@ -558,7 +570,10 @@ img ::-moz-selection {
       cursor: pointer;
       position: relative;
       color: #889099;
-      font-size: 14px; }
+      font-size: 14px;
+      padding-left: 28px;
+      line-height: 20px;
+      min-height: 20px; }
       .checkbox input + .checkbox-label::before {
         content: '';
         border: solid 0.1rem #f1f1f1;
@@ -566,7 +581,7 @@ img ::-moz-selection {
         display: inline-block;
         width: 20px;
         height: 20px;
-        position: relative;
+        position: absolute;
         top: 0;
         left: 0;
         margin-right: .7em;
@@ -2925,3 +2940,107 @@ img ::-moz-selection {
       color: #555555;
       font-size: 14px;
       font-weight: 600; }
+
+.voltaireCampaign {
+  font-size: 14px;
+  color: #555555;
+  border: solid 0.1rem #f1f1f1;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  background-color: #fff;
+  border-radius: 5px; }
+  .voltaireCampaign .nav-tabs .nav-item .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 14px 5px; }
+  .voltaireCampaign .tab-content {
+    padding: 15px; }
+  @media screen and (min-width: 992px) {
+    .voltaireCampaign .voltaireEditor {
+      border-left: solid 1px #f1f1f1;
+      border-right: solid 1px #f1f1f1; } }
+  @media screen and (max-width: 992px) {
+    .voltaireCampaign .voltaireEditor {
+      border-top: solid 1px #f1f1f1;
+      border-bottom: solid 1px #f1f1f1;
+      padding: 2rem 0; } }
+  .voltaireCampaign .voltaireEditor .toolbar {
+    border-bottom: solid 1px #f1f1f1;
+    background-color: #f1faff;
+    padding: 0 15px;
+    height: 48px; }
+    .voltaireCampaign .voltaireEditor .toolbar img {
+      max-width: 100%;
+      height: auto; }
+  .voltaireCampaign .voltaireEditor .inboxbar {
+    border-bottom: solid 1px #f1f1f1; }
+    .voltaireCampaign .voltaireEditor .inboxbar .form-control {
+      border: 0;
+      font-size: 14px;
+      padding: .675rem .5rem;
+      border-radius: 0; }
+      .voltaireCampaign .voltaireEditor .inboxbar .form-control:focus {
+        background-color: transparent; }
+  .voltaireCampaign .voltaireEditor .buttons .btn {
+    min-width: inherit; }
+  @media screen and (max-width: 768px) {
+    .voltaireCampaign .voltaireEditor .checkbox {
+      width: 65%; }
+    .voltaireCampaign .voltaireEditor .selection {
+      width: 100%; }
+      .voltaireCampaign .voltaireEditor .selection ul {
+        justify-content: center; } }
+  .voltaireCampaign .realTime {
+    padding: 15px;
+    text-align: center; }
+    .voltaireCampaign .realTime .title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #00152d; }
+    .voltaireCampaign .realTime .happyicon .face {
+      width: 82px;
+      height: 82px;
+      position: relative;
+      border-radius: 82px;
+      background: url("../img/icon/smiley.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #f1faff; }
+    .voltaireCampaign .realTime .status {
+      font-size: 16px;
+      font-weight: bold;
+      color: #009ef1; }
+    .voltaireCampaign .realTime .description {
+      font-size: 14px;
+      color: #6a727d; }
+  .voltaireCampaign .gridItem .nav-tabs {
+    border-top: solid 1px #f1f1f1; }
+    .voltaireCampaign .gridItem .nav-tabs .nav-item .nav-link {
+      padding: 10px 5px; }
+  .voltaireCampaign table {
+    margin: 0; }
+    .voltaireCampaign table tbody tr td {
+      font-size: .85rem;
+      font-weight: 400;
+      padding: .45rem .15rem; }
+      .voltaireCampaign table tbody tr td span {
+        font-weight: bold; }
+        .voltaireCampaign table tbody tr td span img {
+          margin-right: 5px; }
+      .voltaireCampaign table tbody tr td .btn-plus {
+        background-color: #f1faff;
+        border-radius: 50%;
+        color: #009ef1;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        width: 34px;
+        height: 34px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        .voltaireCampaign table tbody tr td .btn-plus:hover, .voltaireCampaign table tbody tr td .btn-plus:focus {
+          background-color: #009ef1;
+          color: #fff; }

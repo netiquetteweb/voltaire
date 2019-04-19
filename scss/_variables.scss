@@ -26,6 +26,7 @@ $gray-base9:             #363636 !default;
 $gray-base10:            #6d7a94 !default;
 $gray-base11:            #838b9a !default;
 $gray-base12:            #c5c7d7 !default;
+$gray-base13:            #6a727d !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%)   !default; // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
@@ -44,17 +45,18 @@ $voltaire5:              #d9f1fd !default;
 $voltaire6:              #0d1533 !default;
 $voltaire7:              #303f55 !default;
 $voltaire8:              #949cab !default;
+$voltaire9:              #f1faff !default;
 $voltaire-text:          #8da9b7 !default;
 $voltaire-shadow:        rgba(0, 158, 241, .0784313725490196) !default;
 $voltaire-opcity:        rgba(0, 158, 241, .13) !default;
 
-// Nav Hover Color Scheme
+// Nav Heighlight Color Scheme
 $voltairegreen:          #03d967 !default;
 $voltaireorange:         #ffb95a !default;
 $voltairered:            #ff3d3d !default;
 $voltairepurple:         #c636f8 !default;
 
-// Nav Hover Color Scheme
+// Nav light Color Scheme
 $voltaireblue-light:     #e5f5fe !default;
 $voltairegreen-light:    #e5fbf0 !default;
 $voltaireorange-light:   #fff5e9 !default;

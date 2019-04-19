@@ -629,3 +629,151 @@
     }
   }
 }
+.voltaireCampaign {
+  font-size: 14px;
+  color: $gray;
+  border: solid .1rem $white1;
+  box-shadow: 0 0 15px $voltaire-shadow;
+  background-color: $white;
+  border-radius: 5px;
+  .nav-tabs {
+    .nav-item {
+      .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 14px 5px;
+      }
+    }
+  }
+  .tab-content {
+    padding: 15px;
+  }
+  .voltaireEditor {
+    @media screen and (min-width: 992px) {
+      border-left: solid 1px $white1;
+      border-right: solid 1px $white1;
+    }
+    @media screen and (max-width: 992px) {
+      border-top: solid 1px $white1;
+      border-bottom: solid 1px $white1;
+      padding: 2rem 0;
+    }
+    .toolbar {
+      border-bottom: solid 1px $white1;
+      background-color: $voltaire9;
+      padding: 0 15px;
+      height: 48px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .inboxbar {
+      border-bottom: solid 1px $white1;
+      .form-control {
+        border: 0;
+        font-size: 14px;
+        padding: .675rem .5rem;
+        border-radius: 0;
+        &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+    .buttons {
+      .btn {
+        min-width: inherit;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .checkbox {
+        width: 65%;
+      }
+      .selection {
+        width: 100%;
+        ul {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .realTime {
+    padding: 15px;
+    text-align: center;
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      color: $voltaire1;
+    }
+    .happyicon {
+      .face {
+        width: 82px;
+        height: 82px;
+        position: relative;
+        border-radius: 82px;
+        background: url('../img/icon/smiley.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: $voltaire9;
+      }
+    }
+    .status {
+      font-size: 16px;
+      font-weight: bold;
+      color: $voltaire;
+    }
+    .description {
+      font-size: 14px;
+      color: $gray-base13;
+    }
+  }
+  .gridItem {
+    .nav-tabs {
+      border-top: solid 1px $white1;
+      .nav-item {
+        .nav-link {
+          padding: 10px 5px;
+        }
+      }
+    }
+  }
+  table {
+    margin: 0;
+    tbody {
+      tr {
+        td {
+          font-size: .85rem;
+          font-weight: 400;
+          padding: .45rem .15rem;
+          span {
+            font-weight: bold;
+            img {
+              margin-right: 5px;
+            }
+          }
+          .btn-plus {
+            background-color: $voltaire9;
+            border-radius: 50%;
+            color: $voltaire;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            width: 34px;
+            height: 34px;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            &:hover,
+            &:focus {
+              background-color: $voltaire;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
