@@ -2906,21 +2906,21 @@ img ::-moz-selection {
       top: 30px;
       padding: 15px 30px;
       text-align: center;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 600; }
       .voltaireTusers .result .counts span {
         font-size: 13px;
         color: #bcbcbc; }
     .voltaireTusers .result .startDate {
       position: absolute;
-      left: 15px;
+      left: 25px;
       bottom: 15px;
       color: #555555;
       font-size: 14px;
       font-weight: 600; }
     .voltaireTusers .result .endDate {
       position: absolute;
-      right: 15px;
+      right: 25px;
       bottom: 15px;
       color: #555555;
       font-size: 14px;
