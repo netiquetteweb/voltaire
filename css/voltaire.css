@@ -221,6 +221,11 @@ textarea {
   color: #fff;
   text-shadow: none; }
 
+.card {
+  border: solid 0.1rem #f1f1f1;
+  box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
+  background-color: #fff; }
+
 img ::selection {
   background: transparent; }
 
@@ -252,6 +257,12 @@ img ::-moz-selection {
   font-weight: 700;
   font-size: 25px;
   margin: 5px 0 50px; }
+
+.boxTitle {
+  color: #00152d;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 30px; }
 
 .pageHeading .pageTitle {
   margin-bottom: 25px; }
@@ -3044,3 +3055,126 @@ img ::-moz-selection {
         .voltaireCampaign table tbody tr td .btn-plus:hover, .voltaireCampaign table tbody tr td .btn-plus:focus {
           background-color: #009ef1;
           color: #fff; }
+
+.voltaireGifts .giftsbox .blockTitle {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .voltaireGifts .giftsbox .blockTitle {
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%); } }
+
+.voltaireGifts .giftsbox .boxStyle {
+  border: solid 0.1rem #bfc5d1;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+  margin-bottom: 30px; }
+  .voltaireGifts .giftsbox .boxStyle .iconImage {
+    max-width: 130px;
+    height: 100px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 158, 241, 0.0784314);
+    border-radius: 5px;
+    background-size: 50px; }
+    .voltaireGifts .giftsbox .boxStyle .iconImage.hnBG {
+      background-image: url("../img/icon/hn.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .voltaireGifts .giftsbox .boxStyle .iconImage.dmBG {
+      background-image: url("../img/icon/dm.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .voltaireGifts .giftsbox .boxStyle .iconImage.bookBG {
+      background-image: url("../img/icon/book.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .voltaireGifts .giftsbox .boxStyle .iconImage.lunchBG {
+      background-image: url("../img/icon/lunch.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .voltaireGifts .giftsbox .boxStyle .iconImage.ticketBG {
+      background-image: url("../img/icon/tickets.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .voltaireGifts .giftsbox .boxStyle .iconImage.spaBG {
+      background-image: url("../img/icon/spa.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .voltaireGifts .giftsbox .boxStyle .iconImage.swagBG {
+      background-image: url("../img/icon/swag.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .voltaireGifts .giftsbox .boxStyle .iconImage.customBG {
+      background-image: url("../img/icon/custom.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    @media screen and (max-width: 460px) {
+      .voltaireGifts .giftsbox .boxStyle .iconImage {
+        background-size: 60%; } }
+  .voltaireGifts .giftsbox .boxStyle .iconContent {
+    color: #555555;
+    font-size: 14px;
+    padding-left: 25px; }
+    .voltaireGifts .giftsbox .boxStyle .iconContent h2 {
+      color: #555555;
+      font-size: 16px;
+      font-weight: 600; }
+    .voltaireGifts .giftsbox .boxStyle .iconContent span {
+      color: #bfc5d1;
+      font-size: 14px;
+      font-weight: normal; }
+  .voltaireGifts .giftsbox .boxStyle:hover, .voltaireGifts .giftsbox .boxStyle:focus, .voltaireGifts .giftsbox .boxStyle.active {
+    border-color: #009ef1; }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconImage.hnBG, .voltaireGifts .giftsbox .boxStyle:focus .iconImage.hnBG, .voltaireGifts .giftsbox .boxStyle.active .iconImage.hnBG {
+      background-image: url("../img/icon/hn-hover.png"); }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconImage.dmBG, .voltaireGifts .giftsbox .boxStyle:focus .iconImage.dmBG, .voltaireGifts .giftsbox .boxStyle.active .iconImage.dmBG {
+      background-image: url("../img/icon/dm-hover.png"); }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconImage.bookBG, .voltaireGifts .giftsbox .boxStyle:focus .iconImage.bookBG, .voltaireGifts .giftsbox .boxStyle.active .iconImage.bookBG {
+      background-image: url("../img/icon/book-hover.png"); }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconImage.lunchBG, .voltaireGifts .giftsbox .boxStyle:focus .iconImage.lunchBG, .voltaireGifts .giftsbox .boxStyle.active .iconImage.lunchBG {
+      background-image: url("../img/icon/lunch-hover.png"); }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconImage.ticketBG, .voltaireGifts .giftsbox .boxStyle:focus .iconImage.ticketBG, .voltaireGifts .giftsbox .boxStyle.active .iconImage.ticketBG {
+      background-image: url("../img/icon/tickets-hover.png"); }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconImage.spaBG, .voltaireGifts .giftsbox .boxStyle:focus .iconImage.spaBG, .voltaireGifts .giftsbox .boxStyle.active .iconImage.spaBG {
+      background-image: url("../img/icon/spa-hover.png"); }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconImage.swagBG, .voltaireGifts .giftsbox .boxStyle:focus .iconImage.swagBG, .voltaireGifts .giftsbox .boxStyle.active .iconImage.swagBG {
+      background-image: url("../img/icon/swag-hover.png"); }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconImage.customBG, .voltaireGifts .giftsbox .boxStyle:focus .iconImage.customBG, .voltaireGifts .giftsbox .boxStyle.active .iconImage.customBG {
+      background-image: url("../img/icon/custom-hover.png"); }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconContent h2, .voltaireGifts .giftsbox .boxStyle:focus .iconContent h2, .voltaireGifts .giftsbox .boxStyle.active .iconContent h2 {
+      color: #009ef1; }
+    .voltaireGifts .giftsbox .boxStyle:hover .iconContent span, .voltaireGifts .giftsbox .boxStyle:focus .iconContent span, .voltaireGifts .giftsbox .boxStyle.active .iconContent span {
+      color: #555555; }
+
+@media screen and (max-width: 768px) {
+  .voltaireGifts .giftsbox {
+    padding: 0 15px; } }
+
+@media screen and (max-width: 768px) {
+  .checkbox {
+    width: 65%; }
+  .selection {
+    width: 100%; }
+    .selection ul {
+      justify-content: center; } }
+
+.voltaireAdd {
+  min-height: 100px; }
+  .voltaireAdd .list-item {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%); }
+    .voltaireAdd .list-item span {
+      margin-left: 15px; }
+      .voltaireAdd .list-item span img {
+        max-width: 40px; }

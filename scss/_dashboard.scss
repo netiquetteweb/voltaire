@@ -777,3 +777,164 @@
     }
   }
 }
+.voltaireGifts {
+  .giftsbox {
+    .blockTitle {
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 20px;
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        left: 50%;
+        top: 8px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+      }
+    }
+    .boxStyle {
+      border: solid .1rem $gray-base6;
+      border-radius: 5px;
+      padding: 10px;
+      align-items: center;
+      margin-bottom: 30px;
+      .iconImage {
+        max-width: 130px;
+        height: 100px;
+        position: relative;
+        box-shadow: 0 0 20px $voltaire-shadow;
+        border-radius: 5px;
+        background-size: 50px;
+        &.hnBG {
+          background-image: url('../img/icon/hn.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        &.dmBG {
+          background-image: url('../img/icon/dm.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        &.bookBG {
+          background-image: url('../img/icon/book.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        &.lunchBG {
+          background-image: url('../img/icon/lunch.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        &.ticketBG {
+          background-image: url('../img/icon/tickets.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        &.spaBG {
+          background-image: url('../img/icon/spa.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        &.swagBG {
+          background-image: url('../img/icon/swag.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        &.customBG {
+          background-image: url('../img/icon/custom.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        @media screen and (max-width: 460px) {
+          background-size: 60%;
+          }
+        }
+        .iconContent {
+          color: $gray;
+          font-size: 14px;
+          padding-left: 25px;
+          h2 {
+            color: $gray;
+            font-size: 16px;
+            font-weight: 600;
+          }
+          span {
+            color: $gray-base6;
+            font-size: 14px;
+            font-weight: normal;
+            }
+          }
+          &:hover,
+          &:focus,
+          &.active {
+            border-color: $voltaire;
+            .iconImage {
+              &.hnBG {
+                background-image: url('../img/icon/hn-hover.png');
+              }
+              &.dmBG {
+                background-image: url('../img/icon/dm-hover.png');
+              }
+              &.bookBG {
+                background-image: url('../img/icon/book-hover.png');
+              }
+              &.lunchBG {
+                background-image: url('../img/icon/lunch-hover.png');
+              }
+              &.ticketBG {
+                background-image: url('../img/icon/tickets-hover.png');
+              }
+              &.spaBG {
+                background-image: url('../img/icon/spa-hover.png');
+              }
+              &.swagBG {
+                background-image: url('../img/icon/swag-hover.png');
+              }
+              &.customBG {
+                background-image: url('../img/icon/custom-hover.png');
+              }
+            }
+            .iconContent {
+              h2 {
+                color: $voltaire;
+              }
+              span {
+                color: $gray;
+              }
+            }
+          }
+        }
+    @media screen and (max-width: 768px) {
+      padding: 0 15px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .checkbox {
+    width: 65%;
+  }
+  .selection {
+    width: 100%;
+    ul {
+      justify-content: center;
+    }
+  }
+}
+.voltaireAdd {
+  min-height: 100px;
+  .list-item {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    span {
+      margin-left: 15px;
+      img {
+        max-width: 40px;
+      }
+    }
+  }
+}

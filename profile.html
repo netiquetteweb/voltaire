@@ -186,6 +186,17 @@
   <script src="vendor/bootstrap-tokenfield/dist/bootstrap-tokenfield.min.js" type="text/javascript"></script>
   <script src="vendor/jquery-scrollify/jquery.scrollify.js" type="text/javascript"></script>
 
+  <script>
+    jQuery(document).ready(function(){
+      jQuery('#tokenfield').tokenfield({
+        autocomplete: {
+          source: ['Diving','Driving','Dating','Dancing','Cricket'],
+          delay: 100
+        },
+        showAutocompleteOnFocus: true
+      })
+    });
+  </script>
   <script src="js/voltaire.min.js" type="text/javascript"></script>
 
 </body>

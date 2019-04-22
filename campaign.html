@@ -75,279 +75,465 @@
   <!-- MAIN CONTENT -->
   <section class="mainContent">
     <div class="container-fluid">
-      <div class="row"> 
-        <div class="col-12">
-          <div class="voltaireCampaign">
-            <div class="d-flex flex-wrap">
-              <div class="col-lg-3 px-0 mb-3 mb-md-0">
-                <div class="navTabs">
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="col px-0 nav-item">
-                      <a class="nav-link active" id="templates-tab" data-toggle="tab" href="#templates" role="tab" aria-controls="templates" aria-selected="true">Templates</a>
-                    </li>
-                    <li class="col px-0 nav-item">
-                      <a class="nav-link" id="task-tab" data-toggle="tab" href="#task" role="tab" aria-controls="task" aria-selected="false">Task</a>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="templates" role="tabpanel" aria-labelledby="templates-tab">
-                      <ul class="nav-list list-unstyled">
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                      </ul>
-                      <div class="actions d-flex justify-content-center flex-wrap mt-5">
-                        <a href="#!" class="btn btn-primary col-auto">Add Task</a>
-                      </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="voltaireCampaign">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-lg-3 px-0 mb-3 mb-md-0">
+                            <div class="navTabs">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="col px-0 nav-item">
+                                        <a class="nav-link active" id="templates-tab" data-toggle="tab" href="#templates" role="tab" aria-controls="templates" aria-selected="true">Templates</a>
+                                    </li>
+                                    <li class="col px-0 nav-item">
+                                        <a class="nav-link" id="task-tab" data-toggle="tab" href="#task" role="tab" aria-controls="task" aria-selected="false">Task</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="templates" role="tabpanel" aria-labelledby="templates-tab">
+                                        <ul class="nav-list list-unstyled">
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                        </ul>
+                                        <div class="actions d-flex justify-content-center flex-wrap mt-5">
+                                            <a href="#!" class="btn btn-primary col-auto">Add Task</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="task" role="tabpanel" aria-labelledby="task-tab">
+                                        <ul class="nav-list list-unstyled">
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                        </ul>
+                                        <div class="actions d-flex justify-content-center flex-wrap mt-5">
+                                            <a href="#!" class="btn btn-primary col-auto">Add Task</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 px-0 mb-3 mb-md-0 voltaireEditor">
+                            <form>
+                                <div class="toolbar d-flex flex-wrap align-items-center">
+                                    <span class="toolImage"><img src="img/dashboard/toolbar.png" /></span>
+                                </div>
+                                <div class="d-flex flex-wrap align-items-center inboxbar">
+                                    <div class="col-9">
+                                        <input type="text" id="froala-editor" class="form-control" placeholder="Add recipients" name="recipients" />
+                                    </div>
+                                    <div class="col ml-auto text-right"><a href="#!"><u>CSV</u></a></div>
+                                </div>
+                                <div class="d-flex flex-wrap align-items-center inboxbar">
+                                    <div class="col-9">
+                                        <input type="text" id="froala-editor" class="form-control" placeholder="Schedule Date" name="Schedule Date" />
+                                    </div>
+                                    <div class="col ml-auto text-right">
+                                        <a href="#!" type="date"><img src="img/icon/cale.png" /></a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-wrap inboxbar">
+                                    <div class="col-12">
+                                        <textarea rows="12" class="form-control" placeholder="Type....."></textarea>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-center mb-3">
+                                    <a href="#!" class="btn btn-primary m-3 mr-md-auto">+ Add follow ups</a>
+                                    <a href="#!" class="btn btn-primary m-3 ml-md-auto">Send Campaign</a>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="checkbox m-3">
+                                        <input id="send" name="checkbox" type="checkbox">
+                                        <label for="send" class="checkbox-label">Send X days after initial touch point</label>
+                                    </div>
+                                    <div class="quantity my-2">
+                                        <input class="form-control-number" type="number" value="0">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="checkbox m-3">
+                                        <input id="unless" name="checkbox" type="checkbox">
+                                        <label for="unless" class="checkbox-label">Unless we received reply</label>
+                                    </div>
+                                    <div class="selection m-2">
+                                        <ul class="nav">
+                                            <li class="px-1">
+                                                <a href="#!"><img src="img/icon/iconclose.png" /></a>
+                                            </li>
+                                            <li class="px-1">
+                                                <a href="#!"><img src="img/icon/edit.png" /></a>
+                                            </li>
+                                            <li class="px-1">
+                                                <a href="#!"><img src="img/icon/delete.png" /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-center mt-2 buttons">
+                                    <div class="col-lg"><a href="#!" class="btn btn-alt-clear my-2">Email</a></div>
+                                    <div class="col-lg"><a href="#!" onclick="myFunction() class="btn btn-alt-clear my-2">Gift & Notes</a></div>
+                                    <div class="col-lg"><a href="#!" class="btn btn-alt-clear my-2">Task</a></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-3 px-0 mb-3 mb-md-0">
+                            <div class="realTime mb-4">
+                                <div class="title">Real Time Analysis </div>
+                                <div class="happyicon">
+                                    <span class="face d-flex flex-wrap mx-auto my-3"></span>
+                                </div>
+                                <div class="status mb-3">Good Job, Nice Length!</div>
+                                <div class="description mb-4">Fantastic way to implement</div>
+                                <div class="actions d-flex justify-content-center flex-wrap mt-3">
+                                    <a href="#!" class="btn btn-primary w-100">Get a Free Campaign Review</a>
+                                </div>
+                            </div>
+                            <div class="navTabs gridItem">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="col px-0 nav-item">
+                                        <a class="nav-link active" id="Insights-tab" data-toggle="tab" href="#Insights" role="tab" aria-controls="Insights" aria-selected="true">Insights</a>
+                                    </li>
+                                    <li class="col px-0 nav-item">
+                                        <a class="nav-link" id="Value-tab" data-toggle="tab" href="#Value" role="tab" aria-controls="Value" aria-selected="false">Value</a>
+                                    </li>
+                                    <li class="col px-0 nav-item">
+                                        <a class="nav-link" id="Actions-tab" data-toggle="tab" href="#Actions" role="tab" aria-controls="Actions" aria-selected="false">Actions</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="Insights" role="tabpanel" aria-labelledby="Insights-tab">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="Value" role="tabpanel" aria-labelledby="Value-tab">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="Actions" role="tabpanel" aria-labelledby="Actions-tab">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Value Statement</td>
+                                                    <td><span><img src="img/icon/eye.png" />96%</span></td>
+                                                    <td><span><img src="img/icon/forward.png" />96%</span></td>
+                                                    <td><a href="#!" class="btn-plus">+</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="task" role="tabpanel" aria-labelledby="task-tab">
-                      <ul class="nav-list list-unstyled">
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                      </ul>
-                      <div class="actions d-flex justify-content-center flex-wrap mt-5">
-                        <a href="#!" class="btn btn-primary col-auto">Add Task</a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="col-lg-6 px-0 mb-3 mb-md-0 voltaireEditor">
-              <form>
-                <div class="toolbar d-flex flex-wrap align-items-center">
-                  <span class="toolImage"><img src="img/dashboard/toolbar.png" /></span>
-                </div>
-                <div class="d-flex flex-wrap align-items-center inboxbar">
-                  <div class="col-9">
-                    <input type="text" id="froala-editor" class="form-control" placeholder="Add recipients" name="recipients" />
-                  </div>
-                  <div class="col ml-auto text-right"><a href="#!"><u>CSV</u></a></div>
-                </div>
-                <div class="d-flex flex-wrap align-items-center inboxbar">
-                  <div class="col-9">
-                    <input type="text" id="froala-editor" class="form-control" placeholder="Schedule Date" name="Schedule Date" />
-                  </div>
-                  <div class="col ml-auto text-right"><a href="#!" type="date"><img src="img/icon/cale.png" /></a></div>
-                </div>
-                <div class="d-flex flex-wrap inboxbar">
-                  <div class="col-12">
-                    <textarea rows="12" class="form-control" placeholder="Type....."></textarea>
-                  </div>
-                </div>
-                <div class="d-flex flex-wrap justify-content-center mb-3">
-                    <a href="#!" class="btn btn-primary m-3 mr-md-auto">+ Add follow ups</a>
-                    <a href="#!" class="btn btn-primary m-3 ml-md-auto">Send Campaign</a>
-                </div>
-                <div class="d-flex flex-wrap">
-                  <div class="checkbox m-3">
-                    <input id="send" name="checkbox" type="checkbox">
-                    <label for="send" class="checkbox-label">Send X days after initial touch point</label>
-                  </div>
-                  <div class="quantity my-2">
-                    <input class="form-control-number" type="number" value="0">
-                  </div>
-                </div>
-                <div class="d-flex flex-wrap">
-                  <div class="checkbox m-3">
-                    <input id="unless" name="checkbox" type="checkbox">
-                    <label for="unless" class="checkbox-label">Unless we received reply</label>
-                  </div>
-                  <div class="selection m-2">
-                    <ul class="nav">
-                      <li class="px-1"><a href="#!"><img src="img/icon/iconclose.png" /></a></li>
-                      <li class="px-1"><a href="#!"><img src="img/icon/edit.png" /></a></li>
-                      <li class="px-1"><a href="#!"><img src="img/icon/delete.png" /></a></li>
-                    </ul>
-                  </div>
-                </div>                
-                <div class="d-flex flex-wrap justify-content-center mt-2 buttons">
-                  <div class="col-lg"><a href="#!" class="btn btn-alt-clear my-2">Email</a></div>
-                  <div class="col-lg"><a href="#!" class="btn btn-alt-clear my-2">Gift & Notes</a></div>
-                  <div class="col-lg"><a href="#!" class="btn btn-alt-clear my-2">Task</a></div>
-                </div>
-              </form>
-              </div>
-              <div class="col-lg-3 px-0 mb-3 mb-md-0">
-                <div class="realTime mb-4">
-                  <div class="title">Real Time Analysis </div>
-                  <div class="happyicon">
-                    <span class="face d-flex flex-wrap mx-auto my-3"></span>
-                  </div>
-                  <div class="status mb-3">Good Job, Nice Length!</div>
-                  <div class="description mb-4">Fantastic way to implement</div>
-                  <div class="actions d-flex justify-content-center flex-wrap mt-3">
-                    <a href="#!" class="btn btn-primary w-100">Get a Free Campaign Review</a>
-                  </div>
-                </div>
-                <div class="navTabs gridItem">
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="col px-0 nav-item">
-                      <a class="nav-link active" id="Insights-tab" data-toggle="tab" href="#Insights" role="tab" aria-controls="Insights" aria-selected="true">Insights</a>
-                    </li>
-                    <li class="col px-0 nav-item">
-                      <a class="nav-link" id="Value-tab" data-toggle="tab" href="#Value" role="tab" aria-controls="Value" aria-selected="false">Value</a>
-                    </li>
-                    <li class="col px-0 nav-item">
-                      <a class="nav-link" id="Actions-tab" data-toggle="tab" href="#Actions" role="tab" aria-controls="Actions" aria-selected="false">Actions</a>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="Insights" role="tabpanel" aria-labelledby="Insights-tab">
-                      <table class="table">
-                        <tbody>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="tab-pane fade" id="Value" role="tabpanel" aria-labelledby="Value-tab">
-                      <table class="table">
-                        <tbody>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="tab-pane fade" id="Actions" role="tabpanel" aria-labelledby="Actions-tab">
-                      <table class="table">
-                        <tbody>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                          <tr>
-                            <td>Value Statement</td>
-                            <td><span><img src="img/icon/eye.png" />96%</span></td>
-                            <td><span><img src="img/icon/forward.png" />96%</span></td>
-                            <td><a href="#!" class="btn-plus">+</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>                
-              </div>
             </div>
-          </div>
+            <div class="col-lg-12 px-0 mb-3 mb-md-0">
+                <div class="voltaireGifts" id="voltairegn">
+                    <div class="giftsbox col-12 mt-5 mb-1">
+                        <div class="row">
+                          <h2 class="col-12 boxTitle">Gift & Notes</h2>
+                          <h3 class="col-auto blockTitle textBlue">Select Below</h3>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="#!" class="boxStyle d-flex">
+                                    <div class="iconImage hnBG col-4">&nbsp;</div>
+                                    <div class="iconContent col">
+                                        <h2>Handwritten Notes</h2>
+                                        <span>Send Handwritten Post-it Note & Printed PDF</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="#!" class="boxStyle d-flex">
+                                    <div class="iconImage dmBG col-4">&nbsp;</div>
+                                    <div class="iconContent col">
+                                        <h2>Direct Mailers</h2>
+                                        <span>Send Postcard with Demo CTA</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="#!" class="boxStyle d-flex">
+                                    <div class="iconImage bookBG col-4">&nbsp;</div>
+                                    <div class="iconContent col">
+                                        <h2>Book</h2>
+                                        <span>Send Book</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="#!" class="boxStyle d-flex">
+                                    <div class="iconImage lunchBG col-4">&nbsp;</div>
+                                    <div class="iconContent col">
+                                        <h2>Lunch</h2>
+                                        <span>Send Lunch</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="#!" class="boxStyle d-flex">
+                                    <div class="iconImage ticketBG col-4">&nbsp;</div>
+                                    <div class="iconContent col">
+                                        <h2>Tickets</h2>
+                                        <span>Send Tickets</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="#!" class="boxStyle d-flex">
+                                    <div class="iconImage spaBG col-4">&nbsp;</div>
+                                    <div class="iconContent col">
+                                        <h2>Spa</h2>
+                                        <span>Send Spa Appointment</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="#!" class="boxStyle d-flex">
+                                    <div class="iconImage swagBG col-4">&nbsp;</div>
+                                    <div class="iconContent col">
+                                        <h2>Company Swag</h2>
+                                        <span>Send Mugs</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <a href="#!" class="boxStyle d-flex">
+                                    <div class="iconImage customBG col-4">&nbsp;</div>
+                                    <div class="iconContent col">
+                                        <h2>Custom</h2>
+                                        <span>Send Dom Perignon Champagne</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">                  
+                  <div class="d-flex flex-wrap justify-content-center mb-3">
+                    <a href="#!" class="btn btn-primary mb-3 mr-md-auto">+ Add follow ups</a>
+                    <a href="#!" class="btn btn-primary mb-3 ml-md-auto">Send Campaign</a>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                      <div class="checkbox mt-3 mr-3 mb-3">
+                          <input id="sendx" name="checkbox" type="checkbox">
+                          <label for="sendx" class="checkbox-label">Send X days after initial touch point</label>
+                      </div>
+                      <div class="quantity my-2">
+                          <input class="form-control-number" type="number" value="0">
+                      </div>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                      <div class="checkbox mt-3 mr-3 mb-3">
+                          <input id="unlesswe" name="checkbox" type="checkbox">
+                          <label for="unlesswe" class="checkbox-label">Unless we received reply</label>
+                      </div>
+                      <div class="selection m-2">
+                          <ul class="nav">
+                              <li class="px-1">
+                                  <a href="#!"><img src="img/icon/iconclose.png" /></a>
+                              </li>
+                              <li class="px-1">
+                                  <a href="#!"><img src="img/icon/edit.png" /></a>
+                              </li>
+                              <li class="px-1">
+                                  <a href="#!"><img src="img/icon/delete.png" /></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="d-flex flex-wrap justify-content-center mt-2 buttons">
+                      <div class="col-auto"><a href="#!" class="btn btn-alt-clear my-2">Email</a></div>
+                      <div class="col-auto"><a href="#!" class="btn btn-alt-clear my-2">Gift & Notes</a></div>
+                      <div class="col-auto"><a href="#!" class="btn btn-alt-clear my-2">Task</a></div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-12 px-0 mb-3 mb-md-0">
+                <div class="voltaireGifts" id="voltairetask">
+                    <div class="giftsbox col-12 mt-5 mb-1">
+                        <div class="row">
+                          <h2 class="col-12 boxTitle">Task</h2>
+                          <div class="col-12 mb-5">
+                            <div class="card addTask">
+                              <div class="card-bod">
+                                <div class="voltaireAdd">
+                                  <a href="#!" class="list-item">Add your task here <span><img src="img/icon/iconedit.png" /></span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">                  
+                  <div class="d-flex flex-wrap justify-content-center mb-3">
+                    <a href="#!" class="btn btn-primary mb-3 mr-md-auto">+ Add follow ups</a>
+                    <a href="#!" class="btn btn-primary mb-3 ml-md-auto">Send Campaign</a>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                      <div class="checkbox mt-3 mr-3 mb-3">
+                          <input id="sendx" name="checkbox" type="checkbox">
+                          <label for="sendx" class="checkbox-label">Send X days after initial touch point</label>
+                      </div>
+                      <div class="quantity my-2">
+                          <input class="form-control-number" type="number" value="0">
+                      </div>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                      <div class="checkbox mt-3 mr-3 mb-3">
+                          <input id="unlesswe" name="checkbox" type="checkbox">
+                          <label for="unlesswe" class="checkbox-label">Unless we received reply</label>
+                      </div>
+                      <div class="selection m-2">
+                          <ul class="nav">
+                              <li class="px-1">
+                                  <a href="#!"><img src="img/icon/iconclose.png" /></a>
+                              </li>
+                              <li class="px-1">
+                                  <a href="#!"><img src="img/icon/edit.png" /></a>
+                              </li>
+                              <li class="px-1">
+                                  <a href="#!"><img src="img/icon/delete.png" /></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="d-flex flex-wrap justify-content-center mt-2 buttons">
+                      <div class="col-auto"><a href="#!" class="btn btn-alt-clear my-2">Email</a></div>
+                      <div class="col-auto"><a href="#!" class="btn btn-alt-clear my-2">Gift & Notes</a></div>
+                      <div class="col-auto"><a href="#!" class="btn btn-alt-clear my-2">Task</a></div>
+                  </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
   </section>
   <!-- END MAIN CONTENT -->

@@ -323,6 +323,12 @@ textarea {
   text-shadow: none;
 }
 
+.card {
+  border: solid .1rem $white1;
+  box-shadow: 0 0 15px $voltaire-shadow;
+  background-color: $white;
+}
+
 img {
   ::selection {
     background: transparent;
@@ -359,6 +365,12 @@ img {
   font-weight: 700;
   font-size: 25px;
   margin: 5px 0 50px;
+}
+.boxTitle {
+  color: $voltaire1;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 .pageHeading {
   .pageTitle {
