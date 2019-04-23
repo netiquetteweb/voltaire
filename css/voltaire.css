@@ -2008,7 +2008,8 @@ img ::-moz-selection {
 .voltaireCampaign .ViewTabs .nav {
   border: solid 1px #009ef1;
   border-radius: 5px;
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+  background-color: #fff; }
   .voltaireCampaign .ViewTabs .nav li {
     padding: 0; }
     .voltaireCampaign .ViewTabs .nav li a {
@@ -2952,62 +2953,62 @@ img ::-moz-selection {
       font-size: 14px;
       font-weight: 600; }
 
-.voltaireCampaign {
+.voltaireCampage {
   font-size: 14px;
   color: #555555;
   border: solid 0.1rem #f1f1f1;
   box-shadow: 0 0 15px rgba(0, 158, 241, 0.0784314);
   background-color: #fff;
   border-radius: 5px; }
-  .voltaireCampaign .nav-tabs .nav-item .nav-link {
+  .voltaireCampage .nav-tabs .nav-item .nav-link {
     font-size: 14px;
     font-weight: 500;
     padding: 14px 5px; }
-  .voltaireCampaign .tab-content {
+  .voltaireCampage .tab-content {
     padding: 15px; }
   @media screen and (min-width: 992px) {
-    .voltaireCampaign .voltaireEditor {
+    .voltaireCampage .voltaireEditor {
       border-left: solid 1px #f1f1f1;
       border-right: solid 1px #f1f1f1; } }
   @media screen and (max-width: 992px) {
-    .voltaireCampaign .voltaireEditor {
+    .voltaireCampage .voltaireEditor {
       border-top: solid 1px #f1f1f1;
       border-bottom: solid 1px #f1f1f1;
       padding: 2rem 0; } }
-  .voltaireCampaign .voltaireEditor .toolbar {
+  .voltaireCampage .voltaireEditor .toolbar {
     border-bottom: solid 1px #f1f1f1;
     background-color: #f1faff;
     padding: 0 15px;
     height: 48px; }
-    .voltaireCampaign .voltaireEditor .toolbar img {
+    .voltaireCampage .voltaireEditor .toolbar img {
       max-width: 100%;
       height: auto; }
-  .voltaireCampaign .voltaireEditor .inboxbar {
+  .voltaireCampage .voltaireEditor .inboxbar {
     border-bottom: solid 1px #f1f1f1; }
-    .voltaireCampaign .voltaireEditor .inboxbar .form-control {
+    .voltaireCampage .voltaireEditor .inboxbar .form-control {
       border: 0;
       font-size: 14px;
       padding: .675rem .5rem;
       border-radius: 0; }
-      .voltaireCampaign .voltaireEditor .inboxbar .form-control:focus {
+      .voltaireCampage .voltaireEditor .inboxbar .form-control:focus {
         background-color: transparent; }
-  .voltaireCampaign .voltaireEditor .buttons .btn {
+  .voltaireCampage .voltaireEditor .buttons .btn {
     min-width: inherit; }
   @media screen and (max-width: 768px) {
-    .voltaireCampaign .voltaireEditor .checkbox {
+    .voltaireCampage .voltaireEditor .checkbox {
       width: 65%; }
-    .voltaireCampaign .voltaireEditor .selection {
+    .voltaireCampage .voltaireEditor .selection {
       width: 100%; }
-      .voltaireCampaign .voltaireEditor .selection ul {
+      .voltaireCampage .voltaireEditor .selection ul {
         justify-content: center; } }
-  .voltaireCampaign .realTime {
+  .voltaireCampage .realTime {
     padding: 15px;
     text-align: center; }
-    .voltaireCampaign .realTime .title {
+    .voltaireCampage .realTime .title {
       font-size: 16px;
       font-weight: bold;
       color: #00152d; }
-    .voltaireCampaign .realTime .happyicon .face {
+    .voltaireCampage .realTime .happyicon .face {
       width: 82px;
       height: 82px;
       position: relative;
@@ -3016,28 +3017,28 @@ img ::-moz-selection {
       background-position: center center;
       background-repeat: no-repeat;
       background-color: #f1faff; }
-    .voltaireCampaign .realTime .status {
+    .voltaireCampage .realTime .status {
       font-size: 16px;
       font-weight: bold;
       color: #009ef1; }
-    .voltaireCampaign .realTime .description {
+    .voltaireCampage .realTime .description {
       font-size: 14px;
       color: #6a727d; }
-  .voltaireCampaign .gridItem .nav-tabs {
+  .voltaireCampage .gridItem .nav-tabs {
     border-top: solid 1px #f1f1f1; }
-    .voltaireCampaign .gridItem .nav-tabs .nav-item .nav-link {
+    .voltaireCampage .gridItem .nav-tabs .nav-item .nav-link {
       padding: 10px 5px; }
-  .voltaireCampaign table {
+  .voltaireCampage table {
     margin: 0; }
-    .voltaireCampaign table tbody tr td {
+    .voltaireCampage table tbody tr td {
       font-size: .85rem;
       font-weight: 400;
       padding: .45rem .15rem; }
-      .voltaireCampaign table tbody tr td span {
+      .voltaireCampage table tbody tr td span {
         font-weight: bold; }
-        .voltaireCampaign table tbody tr td span img {
+        .voltaireCampage table tbody tr td span img {
           margin-right: 5px; }
-      .voltaireCampaign table tbody tr td .btn-plus {
+      .voltaireCampage table tbody tr td .btn-plus {
         background-color: #f1faff;
         border-radius: 50%;
         color: #009ef1;
@@ -3052,7 +3053,7 @@ img ::-moz-selection {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center; }
-        .voltaireCampaign table tbody tr td .btn-plus:hover, .voltaireCampaign table tbody tr td .btn-plus:focus {
+        .voltaireCampage table tbody tr td .btn-plus:hover, .voltaireCampage table tbody tr td .btn-plus:focus {
           background-color: #009ef1;
           color: #fff; }
 
