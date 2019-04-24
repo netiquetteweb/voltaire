@@ -138,12 +138,12 @@
         background-image: url('../img/icon/iconSearch.png');
         background-repeat: no-repeat;
         background-color: transparent;
-        background-position: left center;
+        background-position: 25px center;
         border-radius: 0;
         border: 0;
         color: $gray-base6;
         font-size: 18px;
-        padding: 0 40px;
+        padding: 0 10px 0 55px;
         outline: none;
         &:focus {
           box-shadow: none;
